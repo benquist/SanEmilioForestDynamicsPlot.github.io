@@ -7,8 +7,10 @@ Single-page research website for the San Emilio Forest Dynamics Plot (SEFDP), de
 - `index.html` - One-page site with hero, overview, timeline, findings, publications, media, ForestGEO links, and contact.
 - `assets/css/styles.css` - Visual system, responsive layout, and section styles.
 - `assets/js/main.js` - Mobile nav behavior, active section highlighting, and reveal interactions.
-- `assets/img/` - Images, figures, logos.
-- `data/` - Small project data files (CSV/JSON) used by the site.
+- `assets/img/photos/` - Local San Emilio field and site photos used directly by the page.
+- `assets/img/figures/` - Local San Emilio figure assets used by media and dashboard sections.
+- `data/publications.json` - Structured publication metadata used to render the publications section.
+- `data/findings.json` - Dashboard findings entries with census-period tags and figure references.
 
 ## Quick start
 
@@ -29,8 +31,8 @@ The live site URL will be:
 
 ## Suggested next steps
 
-1. Add local, project-owned photos and figures under `assets/img/`.
-2. Add downloadable summary graphics and structured publication metadata in `data/`.
+1. Add additional publication entries to `data/publications.json` as the bibliography grows.
+2. Add plot-derived charts and replace placeholder conceptual visuals in the dashboard/media sections.
 3. Expand methods and data-access sections if public data endpoints are added.
 
 ## Core source grounding used in current copy

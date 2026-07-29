@@ -1,0 +1,35 @@
+[
+  {
+    "id": "enquist-enquist-2011-gcb",
+    "title": "Long-term change within a Neotropical forest: assessing differential functional and floristic responses to disturbance and drought",
+    "authors": "Enquist, B. J.; Enquist, C. A. F.",
+    "year": 2011,
+    "journal": "Global Change Biology",
+    "doi": "10.1111/j.1365-2486.2010.02326.x",
+    "topicTags": ["functional-change", "drought"],
+    "summary": "Evaluated long-term floristic and functional shifts in a Neotropical forest with emphasis on disturbance and drought context.",
+    "sourceNotes": "User-provided PDF: Enquist_Enquist_2011_GCB.pdf"
+  },
+  {
+    "id": "swenson-etal-2020-ecological-monographs",
+    "title": "Long-term shifts in the functional composition and diversity of a tropical dry forest: a 30-yr study",
+    "authors": "Swenson, N. G.; Hulshof, C. M.; Katabuchi, M.; Enquist, B. J.",
+    "year": 2020,
+    "journal": "Ecological Monographs",
+    "doi": "10.1002/ecm.1408",
+    "topicTags": ["functional-change"],
+    "summary": "Used three censuses across 30 years to quantify population dynamics, species richness, functional diversity, and directional composition change.",
+    "sourceNotes": "User-provided PDF: Swenson_etal_2020_EcolMong.pdf"
+  },
+  {
+    "id": "huang-etal-2021-ecosphere",
+    "title": "Remotely sensed assessment of increasing chronic and episodic drought effects on a Costa Rican tropical dry forest",
+    "authors": "Huang, C.-Y.; Duran, S. M.; Hu, K.-T.; Li, H.-J.; Swenson, N. G.; Enquist, B. J.",
+    "year": 2021,
+    "journal": "Ecosphere",
+    "doi": "10.1002/ecs2.3824",
+    "topicTags": ["drought", "remote-sensing"],
+    "summary": "Integrated long-term plot observations with satellite metrics to evaluate chronic and episodic drought signals and post-ENSO canopy responses.",
+    "sourceNotes": "User-provided PDF: Huang_etal_2021_Ecosphere...pdf"
+  }
+]

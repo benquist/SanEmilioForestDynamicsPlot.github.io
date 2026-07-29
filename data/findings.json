@@ -1,0 +1,38 @@
+[
+  {
+    "id": "f01",
+    "periods": ["1976-1996"],
+    "title": "Baseline-to-recovery structural comparison",
+    "summary": "Early-to-mid record comparisons establish baseline variability in stem structure and composition after initial mapping and recensus alignment.",
+    "uncertainty": "Interpretation is constrained by interval timing and potential unmeasured disturbance effects.",
+    "figure": "assets/img/figures/huang-fig1.jpg",
+    "source": "Enquist and Enquist 2011"
+  },
+  {
+    "id": "f02",
+    "periods": ["1996-2007"],
+    "title": "Functional composition reorganization",
+    "summary": "Mid-series census contrasts indicate directional changes in functional composition and diversity under changing climatic and successional context.",
+    "uncertainty": "Directional shifts are observational and may reflect interacting drivers rather than a single mechanism.",
+    "figure": "assets/img/figures/huang-fig2.jpg",
+    "source": "Swenson et al. 2020"
+  },
+  {
+    "id": "f03",
+    "periods": ["2007-2021"],
+    "title": "Recent drought-era canopy response",
+    "summary": "Recent observations are consistent with stronger chronic and episodic drought signatures and altered phenology in parts of the landscape.",
+    "uncertainty": "Covariation between drought metrics and biological responses does not alone establish causation.",
+    "figure": "assets/img/figures/huang-fig3.jpg",
+    "source": "Huang et al. 2021"
+  },
+  {
+    "id": "f04",
+    "periods": ["full-record"],
+    "title": "Long-record resilience and sensitivity",
+    "summary": "Across the full monitoring record, the plot shows both sensitivity in composition and resilience in some productivity indicators.",
+    "uncertainty": "Inferences are strongest for this site and should be generalized beyond San Emilio with caution.",
+    "figure": "assets/img/figures/huang-cr-stat.jpg",
+    "source": "ForestGEO + Enquist and Enquist 2011 + Swenson et al. 2020 + Huang et al. 2021"
+  }
+]
