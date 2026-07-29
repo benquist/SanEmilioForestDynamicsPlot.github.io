@@ -137,14 +137,20 @@
           article.appendChild(createElement("h3", "", item.title));
           article.appendChild(createElement("p", "pub-meta", item.authors + " | " + item.year + " | " + item.journal));
 
-          var doiWrap = createElement("p", "");
-          doiWrap.appendChild(document.createTextNode("DOI: "));
-          var doiLink = createElement("a", "", item.doi);
-          doiLink.href = "https://doi.org/" + item.doi;
-          doiLink.target = "_blank";
-          doiLink.rel = "noopener noreferrer";
-          doiWrap.appendChild(doiLink);
-          article.appendChild(doiWrap);
+          var linkWrap = createElement("p", "");
+          var linkHref = item.doi ? "https://doi.org/" + item.doi : item.url;
+          var linkLabel = item.doi ? "DOI: " : item.url ? "Link: " : "";
+          var linkText = item.doi || item.url || "";
+
+          if (linkHref) {
+            linkWrap.appendChild(document.createTextNode(linkLabel));
+            var linkEl = createElement("a", "", linkText);
+            linkEl.href = linkHref;
+            linkEl.target = "_blank";
+            linkEl.rel = "noopener noreferrer";
+            linkWrap.appendChild(linkEl);
+            article.appendChild(linkWrap);
+          }
 
           article.appendChild(createElement("p", "pub-note", item.summary));
           article.appendChild(createElement("p", "small-note", "Source file: " + item.sourceNotes));

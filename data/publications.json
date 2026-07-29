@@ -31,5 +31,115 @@
     "topicTags": ["drought", "remote-sensing"],
     "summary": "Integrated long-term plot observations with satellite metrics to evaluate chronic and episodic drought signals and post-ENSO canopy responses.",
     "sourceNotes": "User-provided PDF: Huang_etal_2021_Ecosphere...pdf"
+  },
+  {
+    "id": "conlisk-etal-2009-geob",
+    "title": "Improved abundance prediction from presence-absence data",
+    "authors": "Conlisk, E.; Conlisk, J.; Enquist, B.; Thompson, J.; Harte, J.",
+    "year": 2009,
+    "journal": "Global Ecology and Biogeography",
+    "doi": "10.1111/j.1466-8238.2008.00427.x",
+    "topicTags": ["species-distribution", "community-ecology"],
+    "summary": "Developed improved abundance prediction methods from presence-absence data, relevant to scaling biodiversity inference from sparse observations.",
+    "sourceNotes": "User-provided publication list"
+  },
+  {
+    "id": "enquist-etal-1999-nature",
+    "title": "Allometric scaling of production and life history variation in vascular plants",
+    "authors": "Enquist, B. J.; West, G. B.; Charnov, E. L.; Brown, J. H.; Santa, T.; Road, H. P.; Fe, S.; Division, T.; Ms, B.",
+    "year": 1999,
+    "journal": "Nature",
+    "doi": "10.1038/44819",
+    "topicTags": ["allometry", "ecological-scaling"],
+    "summary": "Classic allometric paper linking plant production and life-history variation to broad scaling relationships.",
+    "sourceNotes": "User-provided publication list"
+  },
+  {
+    "id": "harte-etal-2009-ecol-letters",
+    "title": "Biodiversity scales from plots to biomes with a universal species-area curve",
+    "authors": "Harte, J.; Smith, A. B.; Storch, D.",
+    "year": 2009,
+    "journal": "Ecology Letters",
+    "doi": "10.1111/j.1461-0248.2009.01328.x",
+    "topicTags": ["species-area", "ecological-scaling"],
+    "summary": "Proposed a universal species-area relationship spanning plots to biomes, useful for framing biodiversity scaling.",
+    "sourceNotes": "User-provided publication list"
+  },
+  {
+    "id": "hubbell-etal-1980-bucket-brigade",
+    "title": "Foraging by bucket-brigade in leaf-cutter ants",
+    "authors": "Hubbell, S. P.; Johnson, L. K.; Stanislav, E.; Wilson, B.; Fowler, H.",
+    "year": 1980,
+    "journal": "Biotropica",
+    "doi": "10.2307/2387973",
+    "topicTags": ["ant-ecology", "foraging"],
+    "summary": "Described bucket-brigade foraging behavior in leaf-cutter ants, part of the broader ecological context of tropical systems.",
+    "sourceNotes": "User-provided publication list"
+  },
+  {
+    "id": "hulshof-etal-2012-bursera",
+    "title": "Interannual variability of growth and reproduction in Bursera simaruba: the role of allometry and resource variability",
+    "authors": "Hulshof, C. M.; Stegen, J. C.; Swenson, N. G.; Enquist, C. A.; Enquist, B. J.",
+    "year": 2012,
+    "journal": "Ecology",
+    "doi": "10.1890/11-0740.1",
+    "topicTags": ["allometry", "drought", "functional-change"],
+    "summary": "Examined how allometry and resource variability shape annual growth and reproduction in a tropical dry-forest tree.",
+    "sourceNotes": "User-provided publication list"
+  },
+  {
+    "id": "rockwood-1976-atta",
+    "title": "Plant selection and foraging patterns in two species of leaf-cutting ants (Atta)",
+    "authors": "Rockwood, L. L.",
+    "year": 1976,
+    "journal": "Ecology",
+    "doi": "10.2307/1936397",
+    "topicTags": ["ant-ecology", "foraging"],
+    "summary": "Analyzed plant selection and foraging patterns in leaf-cutting ants, contributing to dry-forest trophic context.",
+    "sourceNotes": "User-provided publication list"
+  },
+  {
+    "id": "rockwood-hubbell-1987-ocoe",
+    "title": "Host-plant selection, diet diversity, and optimal foraging in a tropical leafcutting ant",
+    "authors": "Rockwood, L. L.; Hubbell, S. P.",
+    "year": 1987,
+    "journal": "Oecologia",
+    "url": "https://www.jstor.org/stable/4218430",
+    "topicTags": ["ant-ecology", "foraging"],
+    "summary": "Explored host-plant selection and diet diversity in tropical leafcutting ants with an optimal foraging framework.",
+    "sourceNotes": "User-provided publication list"
+  },
+  {
+    "id": "swenson-enquist-2009-assembly",
+    "title": "Opposing assembly mechanisms in a neotropical dry forest: implications for phylogenetic and functional community ecology",
+    "authors": "Swenson, N. G.; Enquist, B. J.",
+    "year": 2009,
+    "journal": "Ecology",
+    "doi": "10.1890/08-1025.1",
+    "topicTags": ["community-ecology", "functional-change"],
+    "summary": "Described opposing assembly mechanisms in a neotropical dry forest, relevant to functional and phylogenetic community ecology.",
+    "sourceNotes": "User-provided publication list"
+  },
+  {
+    "id": "stevens-1987-lianas",
+    "title": "Lianas as structural parasites: the Bursera simaruba example",
+    "authors": "Stevens, G. C.",
+    "year": 1987,
+    "journal": "Ecology",
+    "doi": "10.2307/1938806",
+    "topicTags": ["lianas", "functional-change"],
+    "summary": "Used Bursera simaruba to illustrate lianas as structural parasites in tropical forest ecology.",
+    "sourceNotes": "User-provided publication list"
+  },
+  {
+    "id": "swenson-etal-2006-scale-dependency",
+    "title": "The problem and promise of scale dependency in community phylogenetics",
+    "authors": "Swenson, N. G.; Enquist, B. J.; Pither, J.; Thompson, J.; Zimmerman, J. K.",
+    "year": 2006,
+    "journal": "Ecology",
+    "doi": "10.1890/0012-9658(2006)87[2418:TPAPOS]2.0.CO;2",
+    "topicTags": ["community-ecology", "phylogenetics"],
+    "summary": "Discussed how scale dependence affects community phylogenetics and ecological inference.",
+    "sourceNotes": "User-provided publication list"
   }
 ]
