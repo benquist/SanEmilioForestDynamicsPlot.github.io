@@ -430,6 +430,57 @@ a {
   color: #264135;
 }
 
+.location-layout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.location-map {
+  margin: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(17, 45, 27, 0.08);
+}
+
+.location-map svg {
+  width: 100%;
+  height: auto;
+}
+
+.map-title {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  fill: #1f4f32;
+}
+
+.map-label {
+  font-family: "Outfit", "Segoe UI", sans-serif;
+  font-size: 17px;
+  fill: #173f29;
+}
+
+.map-label-strong {
+  font-weight: 700;
+  font-size: 18px;
+  fill: #0f341f;
+}
+
+.location-map figcaption {
+  padding: 0.65rem 0.85rem 0.85rem;
+  font-size: 0.82rem;
+  color: #3e5d4b;
+}
+
+.location-note {
+  display: grid;
+  align-content: start;
+}
+
 .dashboard-uncertainty {
   margin-top: 0.5rem;
   font-size: 0.9rem;
@@ -612,6 +663,10 @@ a {
   }
 
   .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .location-layout {
     grid-template-columns: 1fr;
   }
 

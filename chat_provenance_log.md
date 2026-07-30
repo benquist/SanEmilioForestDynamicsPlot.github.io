@@ -1,3 +1,5 @@
+2026-07-29 | Added a new Plot Location section with a stylized Costa Rica map and star marker showing the San Emilio Forest Dynamics Plot position near Sector Santa Rosa in northwestern Guanacaste. Updated navigation and responsive CSS so the map section renders clearly on desktop and mobile.
+
 2026-07-29 | Integrated the separate San Emilio image repository at /Users/brianjenquist/Desktop/San_Emilio_Images into the website. Copied the JPEG archive into site-owned assets, resized the files for web use, updated the hero and media imagery to use archive photos, and added a dedicated archive gallery section with responsive CSS.
 
 2026-07-29 | "@M I would like to build a new website for our San Emilio plot. Lets make a new project folder for the San Emilio Forest Dynamic Plot website" + "Good. The Github repo for the website is at SanEmilioForestDynamicsPlot_Website" + "I would like to have this be a github based website" — Created new project folder for the San Emilio Forest Dynamic Plot website, aligned folder name to SanEmilioForestDynamicsPlot_Website, scaffolded a responsive static site starter, and configured GitHub Pages deployment via GitHub Actions.

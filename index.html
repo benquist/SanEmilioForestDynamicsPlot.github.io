@@ -30,6 +30,7 @@
         </button>
         <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
           <a href="#overview">Overview</a>
+          <a href="#location">Location</a>
           <a href="#timeline">Timeline</a>
           <a href="#findings">Findings</a>
           <a href="#dashboard">Dashboard</a>
@@ -115,6 +116,78 @@
                 ForestGEO site documentation describes substantial age heterogeneity within the plot, including
                 old secondary forest and mixed-age sectors across ridge, slope, mesa, and valley habitats.
                 This heterogeneity helps interpret localized differences in drought sensitivity.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="location">
+        <div class="container reveal">
+          <div class="section-heading">
+            <p class="kicker">Plot Location</p>
+            <h2>San Emilio in Costa Rica</h2>
+          </div>
+          <div class="location-layout">
+            <figure class="location-map" role="img" aria-labelledby="location-map-caption">
+              <svg viewBox="0 0 760 460" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <defs>
+                  <linearGradient id="seaGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#dff1ea" />
+                    <stop offset="100%" stop-color="#eef7ef" />
+                  </linearGradient>
+                  <linearGradient id="landGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#4f9966" />
+                    <stop offset="100%" stop-color="#2f6f45" />
+                  </linearGradient>
+                </defs>
+
+                <rect x="0" y="0" width="760" height="460" fill="url(#seaGradient)" rx="24" />
+
+                <path
+                  d="M120 185 L167 153 L219 149 L262 128 L311 130 L348 119 L393 136 L440 161 L478 173 L521 205 L565 228 L590 249 L582 274 L543 297 L508 296 L470 279 L421 292 L377 327 L332 333 L293 321 L261 301 L229 301 L190 281 L159 251 L130 227 Z"
+                  fill="url(#landGradient)"
+                  stroke="#1f5f39"
+                  stroke-width="5"
+                  stroke-linejoin="round"
+                />
+
+                <path
+                  d="M228 216 C280 198, 339 196, 401 210 C461 225, 511 251, 548 284"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.45)"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+
+                <circle cx="192" cy="196" r="12" fill="#f5c251" stroke="#7b4d12" stroke-width="3" />
+                <path
+                  d="M192 176 L197 188 L210 188 L199 196 L203 209 L192 201 L181 209 L185 196 L174 188 L187 188 Z"
+                  fill="#f27b2f"
+                  stroke="#7b3a12"
+                  stroke-width="2"
+                />
+
+                <text x="215" y="190" class="map-label">Sector Santa Rosa</text>
+                <text x="215" y="214" class="map-label map-label-strong">San Emilio Plot</text>
+                <text x="44" y="52" class="map-title">Costa Rica</text>
+              </svg>
+              <figcaption id="location-map-caption">
+                Stylized Costa Rica locator map with a star marking the San Emilio Forest Dynamics Plot area in
+                northwestern Guanacaste.
+              </figcaption>
+            </figure>
+
+            <article class="card location-note">
+              <h3>Where The Plot Sits</h3>
+              <p>
+                The San Emilio plot is in the Area de Conservacion Guanacaste (ACG), Sector Santa Rosa, in
+                northwestern Costa Rica near the Pacific slope. The star highlights its regional position within
+                Costa Rica for quick spatial context.
+              </p>
+              <p class="small-note">
+                Locator map is schematic for communication. For precise geospatial work, use project coordinate
+                files and ForestGEO metadata.
               </p>
             </article>
           </div>
