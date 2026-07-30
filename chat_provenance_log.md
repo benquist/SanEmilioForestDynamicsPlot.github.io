@@ -1,3 +1,5 @@
+2026-07-29 | Replaced the prior stylized locator-map section with newly uploaded map files from /Users/brianjenquist/Desktop/San_Emilio_Images. Added a four-map location panel using Costa Rica locator, ACG hydrological network, ecosystem sector map, and 3D contour map, with responsive grid styling and updated explanatory text.
+
 2026-07-29 | Added a new Plot Location section with a stylized Costa Rica map and star marker showing the San Emilio Forest Dynamics Plot position near Sector Santa Rosa in northwestern Guanacaste. Updated navigation and responsive CSS so the map section renders clearly on desktop and mobile.
 
 2026-07-29 | Integrated the separate San Emilio image repository at /Users/brianjenquist/Desktop/San_Emilio_Images into the website. Copied the JPEG archive into site-owned assets, resized the files for web use, updated the hero and media imagery to use archive photos, and added a dedicated archive gallery section with responsive CSS.

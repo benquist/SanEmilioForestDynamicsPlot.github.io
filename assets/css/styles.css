@@ -432,9 +432,15 @@ a {
 
 .location-layout {
   display: grid;
-  grid-template-columns: 1.25fr 0.95fr;
+  grid-template-columns: 1.35fr 0.85fr;
   gap: 1rem;
-  align-items: stretch;
+  align-items: start;
+}
+
+.location-map-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
 }
 
 .location-map {
@@ -446,28 +452,18 @@ a {
   box-shadow: 0 10px 24px rgba(17, 45, 27, 0.08);
 }
 
-.location-map svg {
+.location-map img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
-.map-title {
-  font-family: "Space Grotesk", "Segoe UI", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  fill: #1f4f32;
+.location-map-primary {
+  grid-column: span 2;
 }
 
-.map-label {
-  font-family: "Outfit", "Segoe UI", sans-serif;
-  font-size: 17px;
-  fill: #173f29;
-}
-
-.map-label-strong {
-  font-weight: 700;
-  font-size: 18px;
-  fill: #0f341f;
+.location-map-primary img {
+  aspect-ratio: 16 / 9;
 }
 
 .location-map figcaption {
@@ -479,6 +475,8 @@ a {
 .location-note {
   display: grid;
   align-content: start;
+  position: sticky;
+  top: 96px;
 }
 
 .dashboard-uncertainty {
@@ -668,6 +666,22 @@ a {
 
   .location-layout {
     grid-template-columns: 1fr;
+  }
+
+  .location-note {
+    position: static;
+  }
+
+  .location-map-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .location-map-primary {
+    grid-column: auto;
+  }
+
+  .location-map-primary img {
+    aspect-ratio: 4 / 3;
   }
 
   .hero-stats ul {
