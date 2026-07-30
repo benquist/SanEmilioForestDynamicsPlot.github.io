@@ -1,3 +1,5 @@
+2026-07-29 | Added the uploaded ACG-logo.png into site assets and integrated the ACG logo in the location-note panel so the map section now includes the official ACG identity mark alongside the new uploaded maps.
+
 2026-07-29 | Replaced the prior stylized locator-map section with newly uploaded map files from /Users/brianjenquist/Desktop/San_Emilio_Images. Added a four-map location panel using Costa Rica locator, ACG hydrological network, ecosystem sector map, and 3D contour map, with responsive grid styling and updated explanatory text.
 
 2026-07-29 | Added a new Plot Location section with a stylized Costa Rica map and star marker showing the San Emilio Forest Dynamics Plot position near Sector Santa Rosa in northwestern Guanacaste. Updated navigation and responsive CSS so the map section renders clearly on desktop and mobile.

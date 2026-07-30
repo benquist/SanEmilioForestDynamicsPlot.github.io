@@ -479,6 +479,29 @@ a {
   top: 96px;
 }
 
+.acg-logo-block {
+  margin: 0 0 0.8rem;
+  display: grid;
+  justify-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem;
+  border: 1px solid rgba(46, 125, 79, 0.2);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(247, 251, 245, 0.9), rgba(236, 245, 232, 0.9));
+}
+
+.acg-logo-block img {
+  width: clamp(98px, 22vw, 132px);
+  height: auto;
+}
+
+.acg-logo-block figcaption {
+  font-size: 0.8rem;
+  color: #3b5647;
+  text-align: center;
+  line-height: 1.3;
+}
+
 .dashboard-uncertainty {
   margin-top: 0.5rem;
   font-size: 0.9rem;
