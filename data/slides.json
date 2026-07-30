@@ -1,0 +1,416 @@
+[
+  {
+    "number": 1,
+    "title": "An Introduction to the San Emilio Forest Dynamics Plot: Assessing the drivers underlying four decades of change in a neo",
+    "chapter": "Introduction",
+    "src": "assets/presentation/slides/slide-01.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-01.webp",
+    "alt": "Slide 1: An Introduction to the San Emilio Forest Dynamics Plot: Assessing the drivers underlying four decades of change in a neo",
+    "transcript": "An Introduction to the San Emilio Forest Dynamics Plot: Assessing the drivers underlying four decades of change in a neotropical seasonally dry forest Brian J. Enquist University of Arizona"
+  },
+  {
+    "number": 2,
+    "title": "Catherine Hulshof, Cho-ying Huang, Carolyn A. F. Enquist, Sandra Duran, Lisa Patrick Bentley, Arturo Sanchez-Azofeifa",
+    "chapter": "Introduction",
+    "src": "assets/presentation/slides/slide-02.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-02.webp",
+    "alt": "Slide 2: Catherine Hulshof, Cho-ying Huang, Carolyn A. F. Enquist, Sandra Duran, Lisa Patrick Bentley, Arturo Sanchez-Azofeifa",
+    "transcript": "Catherine Hulshof, Cho-ying Huang, Carolyn A. F. Enquist, Sandra Duran, Lisa Patrick Bentley, Arturo Sanchez-Azofeifa Adrian Solis-Vargas Gustavo Delgado Qing He Hsin-Ju Li Damani Eubanks Matiss Castorena Maria-Fernanda Obando-Picado Milagro Jimenez Josue Pacheco Field Crews Dan Janzen Winnie Hallwachs Maria Chavaria Jon Sullivan Camillo Camargo Lisa Rose Tom Gillispie R. Franco J. Klemens National Science Foundation Fulbright Fellowship(s) Nature Conservancy Tinker Foundation National Geographic ForestGEO Acknowledgements Funding and Institutional Support ACG, Costa Rica Instituto Nacional de Biodiversidad (INBIO) National Herbarium of Costa Rica Nathan Swenson, Adam Chmurzynski, Nelson Zamora, Roberto Espinoza, Roger Blanco, Alejandro Masis, Steve P. Hubbell, George C. Stevens Support"
+  },
+  {
+    "number": 3,
+    "title": "Area de Conservaci\u00f3n Guanacaste is a network of protected areas and a World Heritage Site in Guanacaste Province, in nor",
+    "chapter": "Introduction",
+    "src": "assets/presentation/slides/slide-03.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-03.webp",
+    "alt": "Slide 3: Area de Conservaci\u00f3n Guanacaste is a network of protected areas and a World Heritage Site in Guanacaste Province, in nor",
+    "transcript": "Area de Conservaci\u00f3n Guanacaste is a network of protected areas and a World Heritage Site in Guanacaste Province, in northwestern Costa Rica"
+  },
+  {
+    "number": 4,
+    "title": "Dry Forest",
+    "chapter": "Introduction",
+    "src": "assets/presentation/slides/slide-04.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-04.webp",
+    "alt": "Slide 4: Dry Forest",
+    "transcript": "Dry Forest Rain Forest Cloud Forest"
+  },
+  {
+    "number": 5,
+    "title": "Dry Forest",
+    "chapter": "Introduction",
+    "src": "assets/presentation/slides/slide-05.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-05.webp",
+    "alt": "Slide 5: Dry Forest",
+    "transcript": "Dry Forest Rain Forest"
+  },
+  {
+    "number": 6,
+    "title": "San Emilio Forest Dynamics Plot",
+    "chapter": "Plot history",
+    "src": "assets/presentation/slides/slide-06.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-06.webp",
+    "alt": "Slide 6: San Emilio Forest Dynamics Plot",
+    "transcript": "San Emilio Forest Dynamics Plot ~16 ha plot: 680m x 240m rectangle All trees and lianas 3cm dbh measured and spatial position mapped Forest surveys completed in 1976, 1996, 2006, 2020* Plot initiated in 1976 by S.P. Hubbell and G.C. Stevens ~150 tree species in the plot"
+  },
+  {
+    "number": 7,
+    "title": "Why is this forest plot notable?",
+    "chapter": "Plot history",
+    "src": "assets/presentation/slides/slide-07.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-07.webp",
+    "alt": "Slide 7: Why is this forest plot notable?",
+    "transcript": "Why is this forest plot notable? Tropical dry forest (seasonal drought, high interannual variation in rainfall) Long-term dynamics Disturbed It is in various stages of recovery from human disturbance A bellwether for the fate of more mesic tropical forests under climate change One of a relatively small number of dry forest plots Although only 1 census with ForestGeo protocol, 3 additional surveys with overlapping protocols provide 44 years of forest dynamics*. An accurate reflection of an increasing large fraction of tropical forest"
+  },
+  {
+    "number": 8,
+    "title": "Mean annual rainfall 1565 \u00b1 463 mm (mean \u00b1 SD)",
+    "chapter": "Plot history",
+    "src": "assets/presentation/slides/slide-08.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-08.webp",
+    "alt": "Slide 8: Mean annual rainfall 1565 \u00b1 463 mm (mean \u00b1 SD)",
+    "transcript": "Mean annual rainfall 1565 \u00b1 463 mm (mean \u00b1 SD) Annual Precipitation Lowland Guanacaste Annual rainfall highly variable \u2013 ranging from 3,000mm (1937) to 700mm (1985) Distinct dry season ~ 5-6 months of little to no rain"
+  },
+  {
+    "number": 9,
+    "title": "George C. Stevens",
+    "chapter": "Plot history",
+    "src": "assets/presentation/slides/slide-09.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-09.webp",
+    "alt": "Slide 9: George C. Stevens",
+    "transcript": "George C. Stevens Stephen Hubbell 1976 and 1977"
+  },
+  {
+    "number": 10,
+    "title": "Original 1977 hand-drawn plot map and handwritten tree census ledger",
+    "chapter": "Plot history",
+    "src": "assets/presentation/slides/slide-10.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-10.webp",
+    "alt": "Slide 10: Original 1977 hand-drawn plot map and handwritten tree census ledger",
+    "transcript": "Original 1977 hand-drawn plot map and handwritten tree census ledger"
+  },
+  {
+    "number": 11,
+    "title": "Original hand-drawn quadrat maps recording numbered trees and plot features",
+    "chapter": "Plot history",
+    "src": "assets/presentation/slides/slide-11.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-11.webp",
+    "alt": "Slide 11: Original hand-drawn quadrat maps recording numbered trees and plot features",
+    "transcript": "Original hand-drawn quadrat maps recording numbered trees and plot features"
+  },
+  {
+    "number": 12,
+    "title": "But that work was in a similar tropical dry forest about 40km south",
+    "chapter": "Plot history",
+    "src": "assets/presentation/slides/slide-12.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-12.webp",
+    "alt": "Slide 12: But that work was in a similar tropical dry forest about 40km south",
+    "transcript": "But that work was in a similar tropical dry forest about 40km south It was cut and is now cattle pasture Is this the plot where Hubbell collected data for his 1979 paper? No"
+  },
+  {
+    "number": 13,
+    "title": "Early San Emilio research papers on leafcutter ants and lianas",
+    "chapter": "Plot history",
+    "src": "assets/presentation/slides/slide-13.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-13.webp",
+    "alt": "Slide 13: Early San Emilio research papers on leafcutter ants and lianas",
+    "transcript": "Early San Emilio research papers on leafcutter ants and lianas"
+  },
+  {
+    "number": 14,
+    "title": "The plot history is also a history of data technology",
+    "chapter": "Census and methods",
+    "src": "assets/presentation/slides/slide-14.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-14.webp",
+    "alt": "Slide 14: The plot history is also a history of data technology",
+    "transcript": "The plot history is also a history of data technology"
+  },
+  {
+    "number": 15,
+    "title": "Post 1976 Protocol",
+    "chapter": "Census and methods",
+    "src": "assets/presentation/slides/slide-15.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-15.webp",
+    "alt": "Slide 15: Post 1976 Protocol",
+    "transcript": "Post 1976 Protocol Plots are divided into four triangles using tapes pulled between corners. Sample W -> N -> E -> S Start here End here W N E S 20m Nathan Swenson (2006) Adam Chmurzynski (2020)"
+  },
+  {
+    "number": 16,
+    "title": "Protocol",
+    "chapter": "Census and methods",
+    "src": "assets/presentation/slides/slide-16.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-16.webp",
+    "alt": "Slide 16: Protocol",
+    "transcript": "Protocol Stem distance and angle to center of plot X, Y coordinate calculated Hagl\u00f6f DME 201 2020 Survey 20m"
+  },
+  {
+    "number": 17,
+    "title": "15 hectare plot - 388 20x20m quadrats",
+    "chapter": "Census and methods",
+    "src": "assets/presentation/slides/slide-17.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-17.webp",
+    "alt": "Slide 17: 15 hectare plot - 388 20x20m quadrats",
+    "transcript": "15 hectare plot - 388 20x20m quadrats Plot was surveyed and marked with rebar in 1976 to form a 20m grid All stems \u2265 1cm D.B.H 2020 (prior censuses >= 3cm D.B.H.)"
+  },
+  {
+    "number": 18,
+    "title": "MORACEAE -",
+    "chapter": "Census and methods",
+    "src": "assets/presentation/slides/slide-18.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-18.webp",
+    "alt": "Slide 18: MORACEAE -",
+    "transcript": "MORACEAE - Maclura tinctoria Many, but not all trees were tagged in 1976. Most were over 10cm dbh in 1976 April, 2008"
+  },
+  {
+    "number": 19,
+    "title": "Three field photographs showing San Emilio leaves, understory, and woody vegetation",
+    "chapter": "Census and methods",
+    "src": "assets/presentation/slides/slide-19.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-19.webp",
+    "alt": "Slide 19: Three field photographs showing San Emilio leaves, understory, and woody vegetation",
+    "transcript": "Three field photographs showing San Emilio leaves, understory, and woody vegetation"
+  },
+  {
+    "number": 20,
+    "title": "Elevational range: 308-354 m",
+    "chapter": "Census and methods",
+    "src": "assets/presentation/slides/slide-20.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-20.webp",
+    "alt": "Slide 20: Elevational range: 308-354 m",
+    "transcript": "Elevational range: 308-354 m Plot size: 680 m x 240 m Lidar Elevation scan, 2021, Arturo Sanchez"
+  },
+  {
+    "number": 21,
+    "title": "Lidar Elevation scan, 2021, Arturo Sanchez",
+    "chapter": "Census and methods",
+    "src": "assets/presentation/slides/slide-21.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-21.webp",
+    "alt": "Slide 21: Lidar Elevation scan, 2021, Arturo Sanchez",
+    "transcript": "Lidar Elevation scan, 2021, Arturo Sanchez"
+  },
+  {
+    "number": 22,
+    "title": "Lidar Elevation scan, 2021, Arturo Sanchez",
+    "chapter": "Census and methods",
+    "src": "assets/presentation/slides/slide-22.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-22.webp",
+    "alt": "Slide 22: Lidar Elevation scan, 2021, Arturo Sanchez",
+    "transcript": "Lidar Elevation scan, 2021, Arturo Sanchez"
+  },
+  {
+    "number": 23,
+    "title": "1910s \u2013 1920",
+    "chapter": "Forest change",
+    "src": "assets/presentation/slides/slide-23.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-23.webp",
+    "alt": "Slide 23: 1910s \u2013 1920",
+    "transcript": "1910s \u2013 1920 Dan Janzen 11/17/2021\u2026. \u201c [The plot] it was a banana plantation for the Casona occupants in 1920 (we do not know when abandoned but sometime after that date). I learned that from Roberto Espinoza\u2019s father, don Lupo Espinoza when I arrived in 1975 and was mystified by the pig ditches forming that enormous rectangle with the old ox-cart road along it northern boundary. Pig ditches were supposedly deep enough so that they served as fences to keep the domestic pigs (and peccaries?) out of the plantation. All of those large Enterolobium trees were planted by horses and cows after 1920 in the very open part of the plantation.\u201d Evidence that (human set) fires from nearby pastures entered plot as late as the 1970s? Disturbance The entire plot has experienced some sort of disturbance Spanish likely extracted large Mahogany trees within the plot"
+  },
+  {
+    "number": 24,
+    "title": "Young",
+    "chapter": "Forest change",
+    "src": "assets/presentation/slides/slide-24.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-24.webp",
+    "alt": "Slide 24: Young",
+    "transcript": "Young Mid-Age Oldest 1840\u2019s ? 1910's More evergreen More deciduous Mapping areas of different ages Using mapped fencerow trees Old barbed wire Treerings"
+  },
+  {
+    "number": 25,
+    "title": "Guettarda macrosperma",
+    "chapter": "Forest change",
+    "src": "assets/presentation/slides/slide-25.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-25.webp",
+    "alt": "Slide 25: Guettarda macrosperma",
+    "transcript": "Guettarda macrosperma (RUBIACEAE) April 2008 Pachira quinata. (MALVACEAE)"
+  },
+  {
+    "number": 26,
+    "title": "Young and old areas of forest",
+    "chapter": "Forest change",
+    "src": "assets/presentation/slides/slide-26.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-26.webp",
+    "alt": "Slide 26: Young and old areas of forest",
+    "transcript": "Young and old areas of forest demarcated by old fence row Trees and remnants of old dirt roads and fences Spatial distribution of Bursera simarouba in 1976 Note, locations of fencerow trees Young areas consist of species common of young forest ( Enterolobium, Cecropia, Samanea (Pithecelobium), Choclospermum etc.)"
+  },
+  {
+    "number": 27,
+    "title": "Rhedera trinerva",
+    "chapter": "Forest change",
+    "src": "assets/presentation/slides/slide-27.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-27.webp",
+    "alt": "Slide 27: Rhedera trinerva",
+    "transcript": "Rhedera trinerva more abundant on dry hill tops Luehea speciosa more abundant in early successional habitats Species distributions in 1996"
+  },
+  {
+    "number": 28,
+    "title": "Two potential \u2018drivers\u2019 of forest dynamics",
+    "chapter": "Forest change",
+    "src": "assets/presentation/slides/slide-28.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-28.webp",
+    "alt": "Slide 28: Two potential \u2018drivers\u2019 of forest dynamics",
+    "transcript": "Two potential \u2018drivers\u2019 of forest dynamics (1) Forest is heterogeneous in age (younger and older areas) - Succession changes - Recovery from past disturbance agriculture, pasture At least three areas of different ages (2) External drying trend, and increased number of drought years."
+  },
+  {
+    "number": 29,
+    "title": "Three long-term San Emilio studies on forest composition, drought, and remote sensing",
+    "chapter": "Forest change",
+    "src": "assets/presentation/slides/slide-29.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-29.webp",
+    "alt": "Slide 29: Three long-term San Emilio studies on forest composition, drought, and remote sensing",
+    "transcript": "Three long-term San Emilio studies on forest composition, drought, and remote sensing"
+  },
+  {
+    "number": 30,
+    "title": "Data from the Las Pomas weather station, near Ca\u00f1as, Guanacaste ~50km away (Borchert, 1998; W. Hagnauer & R. Borchert, u",
+    "chapter": "Forest change",
+    "src": "assets/presentation/slides/slide-30.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-30.webp",
+    "alt": "Slide 30: Data from the Las Pomas weather station, near Ca\u00f1as, Guanacaste ~50km away (Borchert, 1998; W. Hagnauer & R. Borchert, u",
+    "transcript": "Data from the Las Pomas weather station, near Ca\u00f1as, Guanacaste ~50km away (Borchert, 1998; W. Hagnauer & R. Borchert, unpublished results). Decrease in mean annual precipitation Increase in drought years. In the 20 years between the first two census periods (1976 and 1996) there have been nine drought years where annual precipitation fell below 1 SD of annual rainfall (1 SD or 1100 mm annual rainfall; dotted line). r 2 = 0.180, p = 0.0001 4 /55 7% 9 /22 41% Changes in rainfall in lowland Guanacaste (1920-1996) Many trees in youngest part of forest established Enquist and Enquist (2011) Global Change Biology"
+  },
+  {
+    "number": 31,
+    "title": "Second survey",
+    "chapter": "Forest change",
+    "src": "assets/presentation/slides/slide-31.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-31.webp",
+    "alt": "Slide 31: Second survey",
+    "transcript": "Second survey Third survey Fourth survey Dry Wet 9 /22 1 /10 3/14 41% 10% 21% Huang et al. (2021 ) Ecosphere Drought 4 /55 7% 1921-1976 Fraction of years in extreme drought 1996 2006 2020 Standardized Precipitation Index Changes in rainfall in lowland Guanacaste (1980-2018) 2000s wetter return to close to pre 1976 baseline Since 2006 increased drought frequency with notable large ENSO 2015 drought"
+  },
+  {
+    "number": 32,
+    "title": "(1) Not much net change in absolute species richness but forest is shifting non-randomly.",
+    "chapter": "Forest change",
+    "src": "assets/presentation/slides/slide-32.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-32.webp",
+    "alt": "Slide 32: (1) Not much net change in absolute species richness but forest is shifting non-randomly.",
+    "transcript": "(1) Not much net change in absolute species richness but forest is shifting non-randomly. Species Richness: 1976: 159 2006: 126 1996: 150 2020: 145"
+  },
+  {
+    "number": 33,
+    "title": "Enquist and Enquist (2011)",
+    "chapter": "Traits and drought",
+    "src": "assets/presentation/slides/slide-33.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-33.webp",
+    "alt": "Slide 33: Enquist and Enquist (2011)",
+    "transcript": "Enquist and Enquist (2011) Global Change Biology"
+  },
+  {
+    "number": 34,
+    "title": "slopes did not",
+    "chapter": "Traits and drought",
+    "src": "assets/presentation/slides/slide-34.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-34.webp",
+    "alt": "Slide 34: slopes did not",
+    "transcript": "slopes did not include the expectation for pure demographic stochasticity (i.e., a slope of 1) or from pure environmental variation (i.e., a slope of 2; Fig. 3). When considering only those species with 10 or more individuals during each census, we found that the power law functions were 2.32 (95% CI, 1.94\u20131.67) for 1976\u20131996, 1.90 (95% CI, 1.53\u20132.27) for 1996\u20132006, and 1.60 (95% CI, 1.20\u20132.00) for 1976 to 2006. Thus, when removing rare species, the confidence intervals on the slopes always included a slope expected given environmental variation Based on theory in Chisholm et al. 2014 Slopes are greater than 1.0 Reject a model of pure demographic stochasticity driving the dynamics of this forest Fail to reject a model of pure environmental stochasticity when excluding rare species but reject it when using all species. Dynamics likely driven primarily by environmental drivers with some stochastic dynamics, most likely for rare species. Swenson et al. (2020) Ecological Monographs"
+  },
+  {
+    "number": 35,
+    "title": "(2) Succession signal is present but minimal",
+    "chapter": "Traits and drought",
+    "src": "assets/presentation/slides/slide-35.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-35.webp",
+    "alt": "Slide 35: (2) Succession signal is present but minimal",
+    "transcript": "(2) Succession signal is present but minimal Floristic shifts between 1976 and 1996 Enquist and Enquist (2011) Global Change Biology"
+  },
+  {
+    "number": 36,
+    "title": "(3) Forest is turning more deciduous. Loss of evergreen mesic species",
+    "chapter": "Traits and drought",
+    "src": "assets/presentation/slides/slide-36.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-36.webp",
+    "alt": "Slide 36: (3) Forest is turning more deciduous. Loss of evergreen mesic species",
+    "transcript": "(3) Forest is turning more deciduous. Loss of evergreen mesic species Enquist and Enquist (2011) Global Change Biology"
+  },
+  {
+    "number": 37,
+    "title": "Remote sensing metrics are consistent with this shift",
+    "chapter": "Traits and drought",
+    "src": "assets/presentation/slides/slide-37.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-37.webp",
+    "alt": "Slide 37: Remote sensing metrics are consistent with this shift",
+    "transcript": "Remote sensing metrics are consistent with this shift Dry Season 2011 Wet Season 2015 Dry Season 2017 Wet Season 2017 Monitoring the San Emilio forest with Satellites (Landsat and Worlldview-2) Characterize change in Deciduousness and Productivity"
+  },
+  {
+    "number": 38,
+    "title": "Canopy Deciduousness",
+    "chapter": "Traits and drought",
+    "src": "assets/presentation/slides/slide-38.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-38.webp",
+    "alt": "Slide 38: Canopy Deciduousness",
+    "transcript": "Canopy Deciduousness Fraction of non photosynthetic vegetation Proxy for forest productivity , EVI (Canopy Greeness) Remote sensing metrics are consistent with this shift Wet Season Dry Season Wet Season canopy greenness has been increasing deciduous trees have higher EVI or greenness values in wet season Dry Season canopy deciduousness has been increasing deciduous trees are becoming more prevalent) Landsat time series El Ni\u00f1o"
+  },
+  {
+    "number": 39,
+    "title": "(4) Directional shift in phenotypes (Traits)",
+    "chapter": "Traits and drought",
+    "src": "assets/presentation/slides/slide-39.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-39.webp",
+    "alt": "Slide 39: (4) Directional shift in phenotypes (Traits)",
+    "transcript": "(4) Directional shift in phenotypes (Traits) Consistent with succession * (maturation of forest) Increases in mean height Consistent with increased drought Reductions in leaf area Reductions in Specific Leaf Area (SLA) Increases in wood density Swenson et al. (2020) Ecological Monographs"
+  },
+  {
+    "number": 40,
+    "title": "Swenson et al. (2020)",
+    "chapter": "Traits and drought",
+    "src": "assets/presentation/slides/slide-40.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-40.webp",
+    "alt": "Slide 40: Swenson et al. (2020)",
+    "transcript": "Swenson et al. (2020) Ecological Monographs"
+  },
+  {
+    "number": 41,
+    "title": "(5) Notable reduction in forest understory species and stems",
+    "chapter": "Conclusions",
+    "src": "assets/presentation/slides/slide-41.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-41.webp",
+    "alt": "Slide 41: (5) Notable reduction in forest understory species and stems",
+    "transcript": "(5) Notable reduction in forest understory species and stems Evergreen understory trees disproportionately dropping out - Large reductions in Ocotea veraguensis LAURACEAE (left) - Complete loss of understory Piper amalgo PIPERACEAE (right) April, 2008 Enquist and Enquist (2011) Global Change Biology"
+  },
+  {
+    "number": 42,
+    "title": "45 Year Higher Order Stats",
+    "chapter": "Conclusions",
+    "src": "assets/presentation/slides/slide-42.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-42.webp",
+    "alt": "Slide 42: 45 Year Higher Order Stats",
+    "transcript": "45 Year Higher Order Stats Number of Stems: 1976: 24,570 (DBH >= 3cm) 1996: 17,986 2006: 22,413 2020: 23,850 - (36,465, DBH >= 1cm) Species Richness: 1976: 159 2006: 126 1996: 150 2020: 145 Chmurzynski et al. In Prep"
+  },
+  {
+    "number": 43,
+    "title": "Abundance change (2006 - 2020)",
+    "chapter": "Conclusions",
+    "src": "assets/presentation/slides/slide-43.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-43.webp",
+    "alt": "Slide 43: Abundance change (2006 - 2020)",
+    "transcript": "Abundance change (2006 - 2020) 2006: 22,413 2020: 23,850 Although a total increase in stems\u2026 Persistent e vidence of mortality in lower size classes even in later surveys Chmurzynski et al. In Prep"
+  },
+  {
+    "number": 44,
+    "title": "Conclusions - Why is this forest plot notable?",
+    "chapter": "Conclusions",
+    "src": "assets/presentation/slides/slide-44.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-44.webp",
+    "alt": "Slide 44: Conclusions - Why is this forest plot notable?",
+    "transcript": "Conclusions - Why is this forest plot notable? Tropical dry forest (seasonal drought, high interannual variation in rainfall) Long-term dynamics Disturbed It is in various stages of recovery from human disturbance A bellwether for the fate of more mesic tropical forests under climate change One of a relatively small number of dry forest plots Although only 1 census with ForestGeo protocol, 3 additional surveys with overlapping protocols provide 44 years of forest dynamics*. An accurate reflection of an increasing large fraction of tropical forest"
+  },
+  {
+    "number": 45,
+    "title": "San Emilio field teams and a researcher measuring a large tree trunk",
+    "chapter": "Conclusions",
+    "src": "assets/presentation/slides/slide-45.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-45.webp",
+    "alt": "Slide 45: San Emilio field teams and a researcher measuring a large tree trunk",
+    "transcript": "San Emilio field teams and a researcher measuring a large tree trunk"
+  },
+  {
+    "number": 46,
+    "title": "Catherine Hulshof, Cho-ying Huang, Carolyn A. F. Enquist, Sandra Duran, Lisa Patrick Bentley, Arturo Sanchez-Azofeifa",
+    "chapter": "Conclusions",
+    "src": "assets/presentation/slides/slide-46.webp",
+    "thumbnail": "assets/presentation/thumbnails/slide-46.webp",
+    "alt": "Slide 46: Catherine Hulshof, Cho-ying Huang, Carolyn A. F. Enquist, Sandra Duran, Lisa Patrick Bentley, Arturo Sanchez-Azofeifa",
+    "transcript": "Catherine Hulshof, Cho-ying Huang, Carolyn A. F. Enquist, Sandra Duran, Lisa Patrick Bentley, Arturo Sanchez-Azofeifa Adrian Solis-Vargas Gustavo Delgado Qing He Hsin-Ju Li Damani Eubanks Matiss Castorena Maria-Fernanda Obando-Picado Milagro Jimenez Josue Pacheco Field Crews Dan Janzen Winnie Hallwachs Maria Chavaria Jon Sullivan Camillo Camargo Lisa Rose Tom Gillispie R. Franco J. Klemens National Science Foundation Fulbright Fellowship(s) Nature Conservancy Tinker Foundation National Geographic ForestGEO Acknowledgements Funding and Institutional Support ACG, Costa Rica Instituto Nacional de Biodiversidad (INBIO) National Herbarium of Costa Rica Nathan Swenson, Adam Chmurzynski, Nelson Zamora, Roberto Espinoza, Roger Blanco, Alejandro Masis, Steve P. Hubbell, George C. Stevens Support"
+  }
+]
