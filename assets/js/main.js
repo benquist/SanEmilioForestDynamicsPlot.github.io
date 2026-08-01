@@ -2,7 +2,7 @@
   "use strict";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var presentationVersion = "forestgeo5";
+  var presentationVersion = "forestgeo5-science-copy-1";
 
   function createElement(tag, className, text) {
     var element = document.createElement(tag);
@@ -331,7 +331,7 @@
       });
     });
 
-    fetchJson("data/findings.json").then(function (data) { findings = data; render(); }).catch(function () {
+    fetchJson(versionPresentationAsset("data/findings.json")).then(function (data) { findings = data; render(); }).catch(function () {
       list.appendChild(createElement("p", "finding-source", "Finding data could not be loaded."));
     });
   }
@@ -387,7 +387,7 @@
       });
     });
 
-    fetchJson("data/publications.json").then(function (data) { publications = data; render(); }).catch(function () {
+    fetchJson(versionPresentationAsset("data/publications.json")).then(function (data) { publications = data; render(); }).catch(function () {
       list.appendChild(createElement("p", "pub-summary", "Publication data could not be loaded."));
     });
   }

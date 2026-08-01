@@ -1,3 +1,5 @@
+2026-07-31 | Revised the website's plot description and survey history against the ForestGEO San Emilio profile, then incorporated independent reviews by the ecology-user and biodiversity-science-guard agents. Added location, coordinates, seasonality, rainfall, habitat and forest-age context; defined woody-stem sampling units and changing thresholds; flagged the published area/dimensions discrepancy and undefined count semantics; aligned findings filters with actual evidence windows; and replaced vague editorial language with factual, qualified statements.
+
 2026-07-31 | Replaced the website presentation with `SanEmilio_Presentation_ForestGeo5.pptx`, regenerated all 46 full-size WebP slides and thumbnails, refreshed extracted slide titles/transcripts, updated download links and cache versioning, and prepared the revised deck for GitHub Pages deployment.
 
 2026-07-30 | Replaced the website presentation with the corrected `SanEmilio_Presentation_ForestGeo4.pptx`, regenerated all 46 full-size WebP slides and thumbnails, refreshed extracted slide titles/transcripts, updated download links and export documentation, and deployed the revised deck to GitHub Pages.

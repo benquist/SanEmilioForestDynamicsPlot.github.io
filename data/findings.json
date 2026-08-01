@@ -2,37 +2,37 @@
   {
     "id": "f01",
     "periods": ["1976-1996"],
-    "title": "Baseline-to-recovery structural comparison",
-    "summary": "Early-to-mid record comparisons establish baseline variability in stem structure and composition after initial mapping and recensus alignment.",
-    "uncertainty": "Interpretation is constrained by interval timing and potential unmeasured disturbance effects.",
+    "title": "Floristic and functional change, 1976–1996",
+    "summary": "The first two surveys were used to assess changes in species composition, stem abundance, and functional composition in relation to disturbance history and drought exposure.",
+    "uncertainty": "The comparison is observational, and drought, succession, prior land use, and other disturbances cannot be separated as independent causes.",
     "figure": "assets/img/figures/huang-fig1.jpg",
     "source": "Enquist and Enquist 2011"
   },
   {
     "id": "f02",
-    "periods": ["1996-2007"],
-    "title": "Functional composition reorganization",
-    "summary": "Mid-series census contrasts indicate directional changes in functional composition and diversity under changing climatic and successional context.",
-    "uncertainty": "Directional shifts are observational and may reflect interacting drivers rather than a single mechanism.",
+    "periods": ["1976-2006"],
+    "title": "Functional composition across three surveys",
+    "summary": "Three surveys spanning approximately 30 years were used to quantify population dynamics, species richness, functional diversity, and directional compositional change.",
+    "uncertainty": "The study documents temporal associations; it does not assign the observed changes to a single causal mechanism.",
     "figure": "assets/img/figures/huang-fig2.jpg",
     "source": "Swenson et al. 2020"
   },
   {
     "id": "f03",
-    "periods": ["2007-2021"],
-    "title": "Recent drought-era canopy response",
-    "summary": "Recent observations are consistent with stronger chronic and episodic drought signatures and altered phenology in parts of the landscape.",
-    "uncertainty": "Covariation between drought metrics and biological responses does not alone establish causation.",
+    "periods": ["remote-sensing"],
+    "title": "Drought and canopy phenology from climate and remote sensing",
+    "summary": "Climate records, long-term plot observations, Landsat data through 2017, MODIS data from 2001–2017, and other imagery were integrated to evaluate drought exposure, canopy deciduousness, wet-season greenness, and response to the 2015 ENSO drought.",
+    "uncertainty": "The climate, satellite, and stem-survey records cover different periods and spatial supports. Their associations do not identify a causal effect of drought. The study reported no directional change in mean annual precipitation after 1980 and no long-term change in annual productivity during 2001–2017.",
     "figure": "assets/img/figures/huang-fig3.jpg",
     "source": "Huang et al. 2021"
   },
   {
     "id": "f04",
-    "periods": ["full-record"],
-    "title": "Long-record resilience and sensitivity",
-    "summary": "Across the full monitoring record, the plot shows both sensitivity in composition and resilience in some productivity indicators.",
-    "uncertainty": "Inferences are strongest for this site and should be generalized beyond San Emilio with caution.",
+    "periods": ["published-synthesis"],
+    "title": "Published evidence through 2017",
+    "summary": "Studies using the 1976–2006 plot surveys and satellite observations through 2017 report directional floristic and functional change and changes in canopy phenology. The 2019–21 census has not been included in the cited peer-reviewed analyses.",
+    "uncertainty": "The studies use different temporal windows, response variables, and observation methods. The evidence is site-specific and should not be generalized to other tropical dry forests without independent tests.",
     "figure": "assets/img/figures/huang-cr-stat.jpg",
-    "source": "ForestGEO + Enquist and Enquist 2011 + Swenson et al. 2020 + Huang et al. 2021"
+    "source": "Synthesis of Enquist and Enquist 2011, Swenson et al. 2020, and Huang et al. 2021"
   }
 ]
