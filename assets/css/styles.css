@@ -151,6 +151,7 @@ figcaption { margin-top: 0.5rem; color: var(--muted); font-size: 0.82rem; line-h
 .archive-mosaic img { width: 100%; height: 100%; object-fit: cover; }
 .archive-landscape { grid-column: span 2; grid-row: span 2; }
 .archive-portrait { grid-row: span 2; }
+.archive-wide { grid-column: span 2; }
 
 .access-section { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 5rem; padding: clamp(5rem, 9vw, 8rem) max(1.25rem, calc((100vw - var(--content)) / 2)); color: #eef3ef; background: var(--forest); }
 .access-intro .eyebrow { color: #bdd5c7; }
