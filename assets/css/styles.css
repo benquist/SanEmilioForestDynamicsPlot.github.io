@@ -154,7 +154,12 @@ figcaption { margin-top: 0.5rem; color: var(--muted); font-size: 0.82rem; line-h
 
 .access-section { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 5rem; padding: clamp(5rem, 9vw, 8rem) max(1.25rem, calc((100vw - var(--content)) / 2)); color: #eef3ef; background: var(--forest); }
 .access-intro .eyebrow { color: #bdd5c7; }
-.access-intro p:last-child { color: #d8e4dc; }
+.access-intro > p { color: #d8e4dc; }
+.data-use-summary { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #70907e; }
+.data-use-summary h3 { margin: 0 0 1rem; font-family: var(--font-display); font-size: 1.35rem; font-weight: 600; }
+.data-use-summary ul { margin: 0; padding-left: 1.2rem; color: #d8e4dc; }
+.data-use-summary li + li { margin-top: 0.65rem; }
+.data-use-summary p { margin: 1.25rem 0 0; color: #bdd5c7; font-size: 0.86rem; }
 .access-links { border-top: 1px solid #70907e; }
 .access-links a { display: grid; grid-template-columns: 120px 1fr auto; gap: 1rem; align-items: center; min-height: 90px; color: #fff; text-decoration: none; border-bottom: 1px solid #70907e; }
 .access-links span { color: #c5d8cc; font-size: 0.8rem; text-transform: uppercase; }
