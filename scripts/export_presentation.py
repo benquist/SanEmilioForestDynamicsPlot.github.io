@@ -25,6 +25,11 @@ IMAGE_SLIDE_DESCRIPTIONS = {
     45: "San Emilio field teams and a researcher measuring a large tree trunk",
 }
 
+SLIDE_TITLE_OVERRIDES = {
+    3: "Area de Conservación Guanacaste",
+    46: "Acknowledgements",
+}
+
 
 def chapter_for(slide_number: int) -> str:
     if slide_number <= 5:
@@ -64,6 +69,8 @@ def extract_slide_text(pptx_path: Path) -> list[list[str]]:
 
 
 def title_from_text(slide_number: int, text: list[str]) -> str:
+    if slide_number in SLIDE_TITLE_OVERRIDES:
+        return SLIDE_TITLE_OVERRIDES[slide_number]
     for candidate in text:
         normalized = " ".join(candidate.split())
         if len(normalized) >= 4 and not normalized.isdigit():

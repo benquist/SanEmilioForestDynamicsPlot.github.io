@@ -2,6 +2,7 @@
   "use strict";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var presentationVersion = "forestgeo4";
 
   function createElement(tag, className, text) {
     var element = document.createElement(tag);
@@ -15,6 +16,10 @@
       if (!response.ok) throw new Error("Failed to load " + path);
       return response.json();
     });
+  }
+
+  function versionPresentationAsset(path) {
+    return path + (path.includes("?") ? "&" : "?") + "v=" + presentationVersion;
   }
 
   function initNavigation() {
@@ -197,7 +202,7 @@
         var figure = createElement("figure", "slide-figure");
         figure.id = "slide-" + pad(slide.number);
         var image = createElement("img");
-        image.src = slide.src;
+        image.src = versionPresentationAsset(slide.src);
         image.alt = slide.alt;
         image.width = 1600;
         image.height = 900;
@@ -212,7 +217,7 @@
         thumbnailButton.type = "button";
         thumbnailButton.setAttribute("aria-label", "Go to slide " + slide.number + ": " + slide.title);
         var thumbnailImage = createElement("img");
-        thumbnailImage.src = slide.thumbnail;
+        thumbnailImage.src = versionPresentationAsset(slide.thumbnail);
         thumbnailImage.alt = "";
         thumbnailImage.loading = "lazy";
         thumbnailImage.width = 320;
@@ -265,7 +270,7 @@
 
     window.addEventListener("resize", function () { if (!userScrolling) showSlide(activeIndex); });
 
-    fetchJson("data/slides.json")
+    fetchJson(versionPresentationAsset("data/slides.json"))
       .then(function (data) {
         if (!Array.isArray(data) || !data.length) throw new Error("No slides found");
         buildViewer(data);
