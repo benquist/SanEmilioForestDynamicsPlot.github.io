@@ -1,3 +1,5 @@
+2026-08-01 | Added an accessible, user-triggered photo shuffle to the Site archive. The 13-slot mosaic now draws a balanced selection of people/fieldwork and site/flora photographs from all 18 project-owned archive images while preserving the static curated gallery as a no-JavaScript fallback.
+
 2026-08-01 | Expanded the Site archive from five to thirteen photographs using existing project-owned images. Added field crews, active tree measurement and documentation, researchers visiting the plot, a field-team portrait, and additional wet- and dry-season forest views; updated the mosaic layout and descriptive alternative text for responsive display.
 
 2026-08-01 | Refined the SEFDP access section to use welcoming, request-based language. Replaced references to controlled data, proposal review, and approved users with an invitation to send a short project summary and research interests, PI-team follow-up to coordinate access, and completion of the data use agreement before the full dataset is shared. Shortened the prefilled inquiry accordingly.

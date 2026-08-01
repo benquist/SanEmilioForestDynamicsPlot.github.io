@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <link rel="preload" as="image" href="assets/img/san-emilio-archive/51329115167_1d41ec85eb_o.jpg" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css?v=forestgeo5-gallery-shuffle-1" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -227,8 +227,12 @@
       </section>
 
       <section class="archive-section" aria-labelledby="archive-title">
-        <div class="archive-heading reveal"><p class="eyebrow">Site archive</p><h2 id="archive-title">Field photographs</h2></div>
-        <div class="archive-mosaic reveal">
+        <div class="archive-heading reveal">
+          <div><p class="eyebrow">Site archive</p><h2 id="archive-title">Field photographs</h2></div>
+          <button class="archive-shuffle" type="button" aria-controls="archive-mosaic" hidden>Shuffle photos</button>
+        </div>
+        <p class="visually-hidden" id="archive-status" aria-live="polite"></p>
+        <div class="archive-mosaic reveal" id="archive-mosaic">
           <figure class="archive-landscape"><img src="assets/img/san-emilio-archive/51329115167_1d41ec85eb_o.jpg" alt="San Emilio forest landscape" loading="lazy" /></figure>
           <figure><img src="assets/img/san-emilio-archive/51330060508_5b337174d9_o.jpg" alt="San Emilio field team" loading="lazy" /></figure>
           <figure class="archive-portrait"><img src="assets/img/san-emilio-archive/51330575099_57988742b5_o.jpg" alt="Fieldwork in the San Emilio plot" loading="lazy" /></figure>
@@ -287,6 +291,6 @@
       <p>Long-term tropical dry forest research since 1976.</p>
     </footer>
 
-    <script src="assets/js/main.js?v=forestgeo5-science-copy-1" defer></script>
+    <script src="assets/js/main.js?v=forestgeo5-gallery-shuffle-1" defer></script>
   </body>
 </html>

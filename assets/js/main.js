@@ -2,7 +2,7 @@
   "use strict";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var presentationVersion = "forestgeo5-science-copy-1";
+  var presentationVersion = "forestgeo5-gallery-shuffle-1";
 
   function createElement(tag, className, text) {
     var element = document.createElement(tag);
@@ -392,9 +392,74 @@
     });
   }
 
+  function initArchiveShuffle() {
+    var gallery = document.getElementById("archive-mosaic");
+    var button = document.querySelector(".archive-shuffle");
+    var status = document.getElementById("archive-status");
+    if (!gallery || !button) return;
+
+    var basePath = "assets/img/san-emilio-archive/";
+    var photos = {
+      people: [
+        ["51330060508_5b337174d9_o.jpg", "San Emilio field team"],
+        ["51330575099_57988742b5_o.jpg", "Fieldwork in the San Emilio plot"],
+        ["51330575834_c7fa5303a1_o.jpg", "Field researchers recording observations beside a fruiting tree"],
+        ["51329115037_a2374b37f2_o.jpg", "Researcher measuring the circumference of a large tree"],
+        ["51330843870_7f484fb501_o.jpg", "Researcher working above the forest understory"],
+        ["51329115027_b7f199dd0e_o.jpg", "Field team measuring and documenting a large tree"],
+        ["51330575464_daa5fdd748_o.jpg", "Researchers visiting the plot during the dry season"],
+        ["51330060483_b2d672fe33_o.jpg", "San Emilio field team with archived field materials"]
+      ],
+      site: [
+        ["51329115167_1d41ec85eb_o.jpg", "San Emilio forest landscape"],
+        ["51329115342_fb81d558d9_o.jpg", "Mapped forest stems and understory"],
+        ["51330844445_3a983a80f6_o.jpg", "Seasonal forest detail"],
+        ["51330060678_b969b30705_o.jpg", "Wet-season canopy and woody vegetation in the plot"],
+        ["51329851431_8b32fc47e6_o.jpg", "Woody vine and epiphytic growth in the forest canopy"],
+        ["51329115412_4b67b8f4cb_o.jpg", "Dry-season vegetation within the San Emilio plot"],
+        ["51329851776_69220474af_o.jpg", "Forest vegetation within the San Emilio plot"],
+        ["51330060543_d249b8a821_o.jpg", "Woody vegetation in the San Emilio plot"],
+        ["51330575399_f90e2669fe_o.jpg", "Looking upward through the San Emilio seasonal forest canopy"],
+        ["51330844730_61a61e2207_o.jpg", "Trees and understory vegetation in the San Emilio plot"]
+      ]
+    };
+    var slots = Array.from(gallery.querySelectorAll("img"));
+    var shuffleCount = 0;
+
+    function shuffled(items) {
+      var result = items.slice();
+      for (var index = result.length - 1; index > 0; index -= 1) {
+        var swapIndex = Math.floor(Math.random() * (index + 1));
+        var temporary = result[index];
+        result[index] = result[swapIndex];
+        result[swapIndex] = temporary;
+      }
+      return result;
+    }
+
+    function shufflePhotos() {
+      var selection = shuffled(photos.people).slice(0, 6).concat(shuffled(photos.site).slice(0, 7));
+      selection = shuffled(selection);
+      gallery.classList.add("is-shuffling");
+      window.setTimeout(function () {
+        slots.forEach(function (image, index) {
+          image.src = basePath + selection[index][0];
+          image.alt = selection[index][1];
+        });
+        gallery.classList.remove("is-shuffling");
+        shuffleCount += 1;
+        if (status) status.textContent = "Field photograph selection " + shuffleCount + " is now displayed.";
+      }, reduceMotion ? 0 : 180);
+    }
+
+    button.hidden = false;
+    button.addEventListener("click", shufflePhotos);
+  }
+
   initNavigation();
   initReveals();
   initSlideshow();
   initFindings();
   initPublications();
+  initArchiveShuffle();
 })();
