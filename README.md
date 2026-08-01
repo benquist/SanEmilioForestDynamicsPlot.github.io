@@ -30,14 +30,14 @@ Then open `http://127.0.0.1:8088/SanEmilioForestDynamicsPlot_Website/` when serv
 The website uses static WebP renders for fast, reliable slide viewing and keeps the original PowerPoint as a download.
 To regenerate slides after editing the deck:
 
-1. Export the PowerPoint to PDF at `/tmp/SanEmilio_Presentation_ForestGeo4.pdf`.
+1. Export the PowerPoint to PDF at `/tmp/SanEmilio_Presentation_ForestGeo5.pdf`.
 2. Install `pypdfium2` and Pillow for the configured Python environment.
 3. Run:
 
 ```bash
 python3 scripts/export_presentation.py \
-	--pptx assets/presentation/SanEmilio_Presentation_ForestGeo4.pptx \
-	--pdf /tmp/SanEmilio_Presentation_ForestGeo4.pdf \
+	--pptx assets/presentation/SanEmilio_Presentation_ForestGeo5.pptx \
+	--pdf /tmp/SanEmilio_Presentation_ForestGeo5.pdf \
 	--output assets/presentation
 ```
 

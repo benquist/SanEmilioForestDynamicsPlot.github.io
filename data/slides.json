@@ -78,7 +78,7 @@
     "src": "assets/presentation/slides/slide-09.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-09.webp",
     "alt": "Slide 9: George C. Stevens",
-    "transcript": "George C. Stevens Stephen Hubbell 1976 and 1977"
+    "transcript": "George C. Stevens Stephen Hubbell Initial Forest Survey 1976 and 1977 PI University of Michigan Graduate student at the time"
   },
   {
     "number": 10,
@@ -222,7 +222,7 @@
     "src": "assets/presentation/slides/slide-25.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-25.webp",
     "alt": "Slide 25: Guettarda",
-    "transcript": "Guettarda macrosperma (RUBIACEAE) April 2008 Pachira quinata . (MALVACEAE)"
+    "transcript": "Guettarda macrosperma (RUBIACEAE) April 2008 Pachira quinata (MALVACEAE)"
   },
   {
     "number": 26,
@@ -249,7 +249,7 @@
     "src": "assets/presentation/slides/slide-28.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-28.webp",
     "alt": "Slide 28: Two potential \u2018drivers\u2019 of forest dynamics",
-    "transcript": "Two potential \u2018drivers\u2019 of forest dynamics (1) Forest is heterogeneous in age (younger and older areas) - Succession changes - Recovery from past disturbance agriculture, pasture At least three areas of different ages (2) External drying trend, and increased number of drought years."
+    "transcript": "Two potential \u2018drivers\u2019 of forest dynamics (1) Forest is heterogeneous in age (younger and older areas) - Succession changes - Recovery from past disturbance agriculture, pasture SEFDP contains at least three areas of different ages (2) External drying trend, and increased number of drought years. Climate change has increased the frequency of drought years Increase in temperatures and Vapor Pressure Deficits (VPD)"
   },
   {
     "number": 29,
@@ -267,7 +267,7 @@
     "src": "assets/presentation/slides/slide-30.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-30.webp",
     "alt": "Slide 30: Data from the Las Pomas weather station, near Ca\u00f1as, Guanacaste ~50km away (Borchert, 1998; W. Hagnauer & R....",
-    "transcript": "Data from the Las Pomas weather station, near Ca\u00f1as, Guanacaste ~50km away (Borchert, 1998; W. Hagnauer & R. Borchert, unpublished results). Decrease in mean annual precipitation Increase in drought years. In the 20 years between the first two census periods (1976 and 1996) there have been nine drought years where annual precipitation fell below 1 SD of annual rainfall (1 SD or 1100 mm annual rainfall; dotted line). r 2 = 0.180, p = 0.0001 4 /55 7% 9 /22 41% Changes in rainfall in lowland Guanacaste (1920-1996) Many trees in youngest part of forest established Enquist and Enquist (2011) Global Change Biology"
+    "transcript": "Data from the Las Pomas weather station, near Ca\u00f1as, Guanacaste ~50km away (Borchert, 1998; W. Hagnauer & R. Borchert, unpublished results). Decrease in mean annual precipitation Increase in drought years. In the 20 years between the first two census periods (1976 and 1996) there have been nine drought years where annual precipitation fell below 1 SD of annual rainfall (1 SD or 1100 mm annual rainfall; dotted line). r 2 = 0.180, p = 0.0001 4 /55 7% 9 /22 41% Many trees in youngest part of forest established Enquist and Enquist (2011) Global Change Biology Changes in rainfall in lowland Guanacaste (1980-2018)"
   },
   {
     "number": 31,
@@ -276,16 +276,16 @@
     "src": "assets/presentation/slides/slide-31.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-31.webp",
     "alt": "Slide 31: Second survey",
-    "transcript": "Second survey Third survey Fourth survey Dry Wet 9 /22 1 /10 3/14 41% 10% 21% Huang et al. (2021) Ecosphere Drought 4 /55 7% 1921-1976 Fraction of years in extreme drought 1996 2006 2020 Standardized Precipitation Index Changes in rainfall in lowland Guanacaste (1980-2018) 2000s wetter return to close to pre 1976 baseline Since 2006 increased drought frequency with notable large ENSO 2015 drought"
+    "transcript": "Second survey Third survey Fourth survey Dry Wet 9 /22 1 /10 3/14 41% 10% 21% Huang et al. (2021) Ecosphere Drought 4 /55 7% 1921-1976 Fraction of years in extreme drought prior to first survey 1996 2006 2020 Standardized Precipitation Index Changes in rainfall in lowland Guanacaste (1980-2018) After 1976 survey San Emilio has experienced increased drought conditions Between 1996 and 2006 survey there was a wetter return to close to pre 1976 baseline Since 2006 increased drought frequency with notable large ENSO 2015 drought"
   },
   {
     "number": 32,
-    "title": "(1) Not much net change in absolute species richness but forest is shifting non-randomly.",
+    "title": "(1) Not much net change in absolute species richness but forest is shifting non-randomly",
     "chapter": "Forest change",
     "src": "assets/presentation/slides/slide-32.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-32.webp",
-    "alt": "Slide 32: (1) Not much net change in absolute species richness but forest is shifting non-randomly.",
-    "transcript": "(1) Not much net change in absolute species richness but forest is shifting non-randomly. Species Richness: 1976: 159 2006: 126 1996: 150 2020: 145"
+    "alt": "Slide 32: (1) Not much net change in absolute species richness but forest is shifting non-randomly",
+    "transcript": "(1) Not much net change in absolute species richness but forest is shifting non-randomly Species Richness: 1976: 159 2006: 126 1996: 150 2020: 145"
   },
   {
     "number": 33,
@@ -303,7 +303,7 @@
     "src": "assets/presentation/slides/slide-34.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-34.webp",
     "alt": "Slide 34: slopes did not",
-    "transcript": "slopes did not include the expectation for pure demographic stochasticity (i.e., a slope of 1) or from pure environmental variation (i.e., a slope of 2; Fig. 3). When considering only those species with 10 or more individuals during each census, we found that the power law functions were 2.32 (95% CI, 1.94\u20131.67) for 1976\u20131996, 1.90 (95% CI, 1.53\u20132.27) for 1996\u20132006, and 1.60 (95% CI, 1.20\u20132.00) for 1976 to 2006. Thus, when removing rare species, the confidence intervals on the slopes always included a slope expected given environmental variation Based on theory in Chisholm et al. 2014 Slopes are greater than 1.0 Reject a model of pure demographic stochasticity driving the dynamics of this forest Fail to reject a model of pure environmental stochasticity when excluding rare species but reject it when using all species. Dynamics likely driven primarily by environmental drivers with some stochastic dynamics, most likely for rare species. Swenson et al. (2020) Ecological Monographs"
+    "transcript": "slopes did not include the expectation for pure demographic stochasticity (i.e., a slope of 1) or from pure environmental variation (i.e., a slope of 2; Fig. 3). When considering only those species with 10 or more individuals during each census, we found that the power law functions were 2.32 (95% CI, 1.94\u20131.67) for 1976\u20131996, 1.90 (95% CI, 1.53\u20132.27) for 1996\u20132006, and 1.60 (95% CI, 1.20\u20132.00) for 1976 to 2006. Thus, when removing rare species, the confidence intervals on the slopes always included a slope expected given environmental variation Based on theory in Chisholm et al. 2014 Ecology Letters Slopes are greater than 1.0 Reject a model of pure demographic stochasticity driving the dynamics of this forest Fail to reject a model of pure environmental stochasticity when excluding rare species but reject it when using all species. Dynamics likely driven primarily by environmental drivers with some stochastic dynamics, most likely for rare species. Swenson et al. (2020) Ecological Monographs"
   },
   {
     "number": 35,
@@ -316,12 +316,12 @@
   },
   {
     "number": 36,
-    "title": "(3) Forest is turning more deciduous. Loss of evergreen mesic species",
+    "title": "(3) Forest is turning more deciduous - Loss of evergreen mesic species",
     "chapter": "Traits and drought",
     "src": "assets/presentation/slides/slide-36.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-36.webp",
-    "alt": "Slide 36: (3) Forest is turning more deciduous. Loss of evergreen mesic species",
-    "transcript": "(3) Forest is turning more deciduous. Loss of evergreen mesic species Enquist and Enquist (2011) Global Change Biology"
+    "alt": "Slide 36: (3) Forest is turning more deciduous - Loss of evergreen mesic species",
+    "transcript": "(3) Forest is turning more deciduous - Loss of evergreen mesic species Enquist and Enquist (2011) Global Change Biology"
   },
   {
     "number": 37,
@@ -343,12 +343,12 @@
   },
   {
     "number": 39,
-    "title": "(4) Directional shift in phenotypes (Traits)",
+    "title": "(4) There is also a directional shift in forest phenotypes (Traits)",
     "chapter": "Traits and drought",
     "src": "assets/presentation/slides/slide-39.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-39.webp",
-    "alt": "Slide 39: (4) Directional shift in phenotypes (Traits)",
-    "transcript": "(4) Directional shift in phenotypes (Traits) Consistent with succession* (maturation of forest) Increases in mean height Consistent with increased drought Reductions in leaf area Reductions in Specific Leaf Area (SLA) Increases in wood density Swenson et al. (2020) Ecological Monographs"
+    "alt": "Slide 39: (4) There is also a directional shift in forest phenotypes (Traits)",
+    "transcript": "(4) There is also a directional shift in forest phenotypes (Traits) Consistent with succession* (maturation of forest) Increases in mean height Consistent with increased drought Reductions in leaf area Reductions in Specific Leaf Area (SLA) Increases in wood density Swenson et al. (2020) Ecological Monographs"
   },
   {
     "number": 40,
@@ -357,7 +357,7 @@
     "src": "assets/presentation/slides/slide-40.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-40.webp",
     "alt": "Slide 40: Swenson et al. (2020)",
-    "transcript": "Swenson et al. (2020) Ecological Monographs"
+    "transcript": "Swenson et al. (2020) Ecological Monographs Standardized effect size (SES) values for the mean nearest neighbor distance (MNND) in 20 x 20 m quadrats during each of the three censuses for individual traits and the individual PC axis 1 and 2 scores. Negative values indicate lower than expected trait diversity, and positive values indicate higher than expected trait values Functional shifts are not driven by a few anomalous population expansions or collapses Observed shift in the functional composition of this dry forest due to large changes in abundance for multiple species on the periphery of trait space."
   },
   {
     "number": 41,
@@ -375,7 +375,7 @@
     "src": "assets/presentation/slides/slide-42.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-42.webp",
     "alt": "Slide 42: 45 Year Higher Order Stats",
-    "transcript": "45 Year Higher Order Stats Number of Stems: 1976: 24,570 (DBH >= 3cm) 1996: 17,986 2006: 22,413 2020: 23,850 - (36,465, DBH >= 1cm) Species Richness: 1976: 159 2006: 126 1996: 150 2020: 145 Chmurzynski et al. In Prep"
+    "transcript": "45 Year Higher Order Stats Number of Stems: 1976: 24,570 (DBH >= 3cm) 1996: 17,986 2006: 22,413 2020: 23,850 - (36,465, DBH >= 1cm) Species Richness: 1976: 159 2006: 126 1996: 150 2020: 145 Chmurzynski et al. In Prep DBH (cm)"
   },
   {
     "number": 43,
@@ -411,6 +411,6 @@
     "src": "assets/presentation/slides/slide-46.webp",
     "thumbnail": "assets/presentation/thumbnails/slide-46.webp",
     "alt": "Slide 46: Acknowledgements",
-    "transcript": "Catherine Hulshof, Cho-ying Huang, Carolyn A. F. Enquist, Sandra Duran, Lisa Patrick Bentley, Arturo Sanchez-Azofeifa Adrian Solis-Vargas Gustavo Delgado Qing He Hsin-Ju Li Damani Eubanks Matiss Castorena Maria-Fernanda Obando-Picado Milagro Jimenez Josue Pacheco Field Crews Dan Janzen Winnie Hallwachs Maria Chavaria Jon Sullivan Camillo Camargo Lisa Rose Tom Gillispie R. Franco J. Klemens National Science Foundation Fulbright Fellowship(s) Nature Conservancy Tinker Foundation National Geographic ForestGEO Acknowledgements Funding and Institutional Support ACG, Costa Rica Instituto Nacional de Biodiversidad (INBIO) National Herbarium of Costa Rica Nathan Swenson, Adam Chmurzynski, Nelson Zamora, Roberto Espinoza, Roger Blanco, Alejandro Masis, Steve P. Hubbell, George C. Stevens Support"
+    "transcript": "Catherine Hulshof, Cho-ying Huang, Carolyn A. F. Enquist, Sandra Duran, Lisa Patrick Bentley, Sean Michaletz, Arturo Sanchez-Azofeifa Adrian Solis-Vargas Gustavo Delgado Qing He Hsin-Ju Li Damani Eubanks Matiss Castorena Maria-Fernanda Obando-Picado Milagro Jimenez Josue Pacheco Field Crews Dan Janzen Winnie Hallwachs Maria Chavaria Jon Sullivan Camillo Camargo Lisa Rose Tom Gillispie R. Franco J. Klemens National Science Foundation Fulbright Fellowship(s) Nature Conservancy Tinker Foundation National Geographic ForestGEO Acknowledgements Funding and Institutional Support ACG, Costa Rica Instituto Nacional de Biodiversidad (INBIO) National Herbarium of Costa Rica Nathan Swenson, Adam Chmurzynski, Nelson Zamora, Roberto Espinoza, Roger Blanco, Alejandro Masis, Steve P. Hubbell, George C. Stevens Support"
   }
 ]

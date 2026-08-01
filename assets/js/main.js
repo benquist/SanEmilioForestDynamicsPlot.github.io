@@ -2,7 +2,7 @@
   "use strict";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var presentationVersion = "forestgeo4";
+  var presentationVersion = "forestgeo5";
 
   function createElement(tag, className, text) {
     var element = document.createElement(tag);
