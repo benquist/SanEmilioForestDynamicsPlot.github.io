@@ -1,3 +1,7 @@
+2026-08-01 | Refined the formal README following independent ecology, biodiversity-science, and scholarly-rigor reviews. Documented historical tagging and mapping limits, identified protocol and taxonomy metadata that require confirmation, labeled recent totals as unpublished, clarified ACG/ForestGEO/PI-team roles, completed selected citations, qualified the presentation workflow, and corrected a malformed author string in the linked publications metadata.
+
+2026-08-01 | Replaced the developer-first GitHub README with a formal introduction to the San Emilio Forest Dynamics Plot. Added the ACG logo, plot setting, census chronology, protocol-comparability caveats, interpretation of reported totals, research scope, welcoming data-access guidance, selected sources, and concise repository maintenance instructions.
+
 2026-08-01 | Added an accessible, user-triggered photo shuffle to the Site archive. The 13-slot mosaic now draws a balanced selection of people/fieldwork and site/flora photographs from all 18 project-owned archive images while preserving the static curated gallery as a no-JavaScript fallback.
 
 2026-08-01 | Expanded the Site archive from five to thirteen photographs using existing project-owned images. Added field crews, active tree measurement and documentation, researchers visiting the plot, a field-team portrait, and additional wet- and dry-season forest views; updated the mosaic layout and descriptive alternative text for responsive display.
