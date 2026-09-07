@@ -1,5 +1,13 @@
 [
   {
+    "id": "f05",
+    "periods": ["climate-trait"],
+    "title": "Isoprene-emitting trees and climate response",
+    "summary": "Using forest inventory data, Taylor et al. estimated the proportional abundance of isoprene-emitting trees (pIE) at 103 lowland tropical sites and quantified temporal composition shifts in three forests exposed to anomalous warming or drought. Across the landscape, pIE increased with mean annual temperature but decreased with dry-season length; through time, it increased strongly under high temperatures and more moderately following drought. The study identifies isoprene emission as a plant trait associated with species responses to climate and suggests that community selection for isoprene-emitting species may contribute to forest resilience.",
+    "uncertainty": "The study combines broad landscape comparisons with temporal analyses across different forests and stressors. Isoprene emission may trade off with strategies such as leaf deciduousness, and the reported associations do not isolate a single causal mechanism or establish that isoprene alone determines resilience at San Emilio.",
+    "source": "Taylor et al. 2018"
+  },
+  {
     "id": "f01",
     "periods": ["1976-1996"],
     "title": "Floristic and functional change, 1976–1996",

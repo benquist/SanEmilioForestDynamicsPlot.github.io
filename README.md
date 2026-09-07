@@ -64,6 +64,7 @@ Research using San Emilio observations has examined:
 - population dynamics, species richness, and functional diversity;
 - forest succession and land-use history;
 - drought exposure and canopy phenology;
+- climate-sensitive functional traits and community assembly;
 - plant allometry and life-history variation;
 - remote-sensing measures of forest structure and seasonal canopy behavior; and
 - functional and phylogenetic community ecology.
@@ -84,6 +85,7 @@ The ForestGEO plot profile is public, and the full SEFDP dataset is available by
 - [Enquist & Enquist (2011), *Long-term change within a Neotropical forest: assessing differential functional and floristic responses to disturbance and drought*](https://doi.org/10.1111/j.1365-2486.2010.02326.x), *Global Change Biology* 17(3): 1408–1424.
 - [Swenson et al. (2020), *Long-term shifts in the functional composition and diversity of a tropical dry forest: a 30-yr study*](https://doi.org/10.1002/ecm.1408), *Ecological Monographs* 90(3): e01408.
 - [Huang et al. (2021), *Remotely sensed assessment of increasing chronic and episodic drought effects on a Costa Rican tropical dry forest*](https://doi.org/10.1002/ecs2.3824), *Ecosphere* 12(11): e03824.
+- [Taylor et al. (2018), *Isoprene emission structures tropical tree biogeography and community assembly responses to climate*](https://doi.org/10.1111/nph.15304), *New Phytologist* 220(2): 435–446.
 
 The website's [publications dataset](data/publications.json) provides additional references associated with San Emilio and its broader ecological context.
 

@@ -1,5 +1,16 @@
 [
   {
+    "id": "taylor-etal-2018-isoprene",
+    "title": "Isoprene emission structures tropical tree biogeography and community assembly responses to climate",
+    "authors": "Taylor, T. C.; McMahon, S. M.; Smith, M. N.; Boyle, B.; Violle, C.; van Haren, J.; Simova, I.; Meir, P.; Ferreira, L. V.; de Camargo, P. B.; da Costa, A. C. L.; Enquist, B. J.; Saleska, S. R.",
+    "year": 2018,
+    "journal": "New Phytologist",
+    "doi": "10.1111/nph.15304",
+    "topicTags": ["functional-change", "climate-response", "community-ecology"],
+    "summary": "Used forest inventories from 103 lowland tropical sites and temporal composition shifts in three forests to show that the proportional abundance of isoprene-emitting trees increased with mean annual temperature, decreased with dry-season length, and increased through time under anomalous heat and, more moderately, drought.",
+    "sourceNotes": "DOI record and user-provided study summary"
+  },
+  {
     "id": "enquist-enquist-2011-gcb",
     "title": "Long-term change within a Neotropical forest: assessing differential functional and floristic responses to disturbance and drought",
     "authors": "Enquist, B. J.; Enquist, C. A. F.",
