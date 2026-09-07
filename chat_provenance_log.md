@@ -1,3 +1,5 @@
+2026-09-06 | Bumped the website asset version after deployment so browsers and the CDN reload the updated publication and findings JSON rather than serving the prior cached data.
+
 2026-09-06 | Added Taylor et al. (2018), “Isoprene emission structures tropical tree biogeography and community assembly responses to climate,” to the structured publication list and findings dashboard. Added the study's landscape and temporal findings about isoprene-emitting tree abundance, temperature, dry-season length, warming, drought, trait tradeoffs, and possible forest resilience, with an explicit observational interpretation boundary and a Climate and traits findings filter.
 
 2026-08-01 | Refined the formal README following independent ecology, biodiversity-science, and scholarly-rigor reviews. Documented historical tagging and mapping limits, identified protocol and taxonomy metadata that require confirmation, labeled recent totals as unpublished, clarified ACG/ForestGEO/PI-team roles, completed selected citations, qualified the presentation workflow, and corrected a malformed author string in the linked publications metadata.
