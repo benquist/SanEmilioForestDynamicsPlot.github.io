@@ -33,6 +33,20 @@
     "sourceNotes": "User-provided PDF: Swenson_etal_2020_EcolMong.pdf"
   },
   {
+    "id": "buzzard-etal-2016-functional-ecology",
+    "title": "Re-growing a tropical dry forest: functional plant trait composition and community assembly during succession",
+    "authors": "Buzzard, V.; Hulshof, C. M.; Birt, T.; Violle, C.; Enquist, B. J.",
+    "year": 2016,
+    "journal": "Functional Ecology",
+    "volume": "30",
+    "issue": "6",
+    "pages": "1006-1013",
+    "doi": "10.1111/1365-2435.12579",
+    "topicTags": ["functional-change"],
+    "summary": "Measured leaf functional traits, abiotic conditions, and stand structure across a 110-year chronosequence in a Costa Rican tropical dry forest. Older stands differed from younger stands in species composition, above-ground biomass, and several community-weighted mean traits; community-weighted trait variances did not generally change with stand age.",
+    "sourceNotes": "Crossref DOI metadata and abstract"
+  },
+  {
     "id": "huang-etal-2021-ecosphere",
     "title": "Remotely sensed assessment of increasing chronic and episodic drought effects on a Costa Rican tropical dry forest",
     "authors": "Huang, C.-Y.; Duran, S. M.; Hu, K.-T.; Li, H.-J.; Swenson, N. G.; Enquist, B. J.",

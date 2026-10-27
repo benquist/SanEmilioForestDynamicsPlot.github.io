@@ -2,7 +2,7 @@
   "use strict";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var presentationVersion = "forestgeo5-gallery-shuffle-2";
+  var presentationVersion = "forestgeo5-gallery-shuffle-3";
 
   function createElement(tag, className, text) {
     var element = document.createElement(tag);
@@ -360,7 +360,13 @@
         article.appendChild(createElement("div", "pub-year", String(item.year)));
         var details = createElement("div", "pub-details");
         details.appendChild(createElement("h3", "", item.title));
-        details.appendChild(createElement("p", "", item.authors + " · " + item.journal));
+        var citation = item.journal;
+        if (item.volume) {
+          citation += " " + item.volume;
+          if (item.issue) citation += "(" + item.issue + ")";
+          if (item.pages) citation += ": " + item.pages;
+        }
+        details.appendChild(createElement("p", "", item.authors + " · " + citation));
         var href = item.doi ? "https://doi.org/" + item.doi : item.url;
         if (href) {
           var link = createElement("a", "pub-link", "Open publication ↗");
