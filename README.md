@@ -99,7 +99,9 @@ The website's [publications dataset](data/publications.json) provides additional
 - `data/slides.json` — Extracted slide titles, transcripts, chapters, and image paths.
 - `data/publications.json` — Structured publication metadata.
 - `data/findings.json` — Findings summaries with census-period tags and figure references.
+- `scripts/render-publications.js` — Dependency-free Node.js publication-card generator and freshness check.
 - `scripts/export_presentation.py` — Repeatable PDF-to-WebP slide renderer and PowerPoint text extractor.
+- `sitemap.xml` — Sitemap containing only the canonical homepage URL.
 
 ## Local development
 
@@ -110,6 +112,23 @@ python3 -m http.server 8088
 ```
 
 Then open `http://127.0.0.1:8088/`. The site is deployed from the repository's `main` branch through GitHub Pages.
+
+## Publication maintenance
+
+Edit `data/publications.json`, then regenerate and validate the static publication cards from the repository directory (Node.js 18 or newer; no package installation):
+
+```bash
+node scripts/render-publications.js
+node scripts/render-publications.js --check
+node --check scripts/render-publications.js
+node --check assets/js/main.js
+```
+
+The generator replaces only the clearly marked publication block in `index.html`, escapes text and attributes, and rejects invalid metadata or non-HTTP(S) links. It sorts cards newest first, retaining JSON order for ties. Do not edit the generated block manually; keep the JSON and regenerated HTML together when publishing. `--check` exits unsuccessfully if the generated HTML is stale.
+
+Publication cards and links are served directly in HTML, including when JavaScript is disabled. Topic controls remain hidden until initialized; JavaScript only hides or shows the existing cards and does not fetch publication JSON. The publication list intentionally does not use the JavaScript-dependent reveal animation, so its content remains visible without JavaScript.
+
+Keep the homepage canonical link and the single URL in `sitemap.xml` aligned with the public homepage URL; do not add section fragments or speculative modification dates.
 
 ## Presentation workflow
 

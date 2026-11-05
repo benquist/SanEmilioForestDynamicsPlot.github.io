@@ -2,7 +2,7 @@
   "use strict";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var presentationVersion = "forestgeo5-gallery-shuffle-3";
+  var presentationVersion = "forestgeo5-gallery-shuffle-4";
 
   function createElement(tag, className, text) {
     var element = document.createElement(tag);
@@ -338,47 +338,23 @@
 
   function initPublications() {
     var list = document.getElementById("publications-list");
-    var buttons = document.querySelectorAll(".pub-filter-btn");
-    if (!list || !buttons.length) return;
-    var publications = [];
+    var filters = document.getElementById("publication-filters");
+    var empty = document.getElementById("publications-empty");
+    if (!list || !filters || !empty) return;
+    var buttons = filters.querySelectorAll(".pub-filter-btn");
+    var publications = list.querySelectorAll(".pub-item[data-topic-tags]");
+    if (!buttons.length || !publications.length) return;
     var activeTopic = "all";
 
     function render() {
-      list.innerHTML = "";
-      var filtered = publications.filter(function (item) {
-        return activeTopic === "all" || (item.topicTags || []).indexOf(activeTopic) !== -1;
-      }).sort(function (a, b) { return b.year - a.year; });
-
-      if (!filtered.length) {
-        list.appendChild(createElement("p", "pub-summary", "No publications match this topic."));
-        return;
-      }
-
-      filtered.forEach(function (item) {
-        var article = createElement("article", "pub-item");
-        article.setAttribute("role", "listitem");
-        article.appendChild(createElement("div", "pub-year", String(item.year)));
-        var details = createElement("div", "pub-details");
-        details.appendChild(createElement("h3", "", item.title));
-        var citation = item.journal;
-        if (item.volume) {
-          citation += " " + item.volume;
-          if (item.issue) citation += "(" + item.issue + ")";
-          if (item.pages) citation += ": " + item.pages;
-        }
-        details.appendChild(createElement("p", "", item.authors + " · " + citation));
-        var href = item.doi ? "https://doi.org/" + item.doi : item.url;
-        if (href) {
-          var link = createElement("a", "pub-link", "Open publication ↗");
-          link.href = href;
-          link.target = "_blank";
-          link.rel = "noopener noreferrer";
-          details.appendChild(link);
-        }
-        article.appendChild(details);
-        article.appendChild(createElement("div", "pub-summary", item.summary));
-        list.appendChild(article);
+      var visibleCount = 0;
+      publications.forEach(function (article) {
+        var tags = article.getAttribute("data-topic-tags").split(" ");
+        var visible = activeTopic === "all" || tags.indexOf(activeTopic) !== -1;
+        article.hidden = !visible;
+        if (visible) visibleCount += 1;
       });
+      empty.hidden = visibleCount !== 0;
     }
 
     buttons.forEach(function (button) {
@@ -393,9 +369,8 @@
       });
     });
 
-    fetchJson(versionPresentationAsset("data/publications.json")).then(function (data) { publications = data; render(); }).catch(function () {
-      list.appendChild(createElement("p", "pub-summary", "Publication data could not be loaded."));
-    });
+    render();
+    filters.hidden = false;
   }
 
   function initArchiveShuffle() {
