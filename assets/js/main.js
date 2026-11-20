@@ -2,7 +2,76 @@
   "use strict";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var presentationVersion = "forestgeo5-gallery-shuffle-5";
+  var presentationVersion = "i18n-es-1";
+  var root = document.documentElement;
+  // Pages below the site root (es/index.html) set data-asset-base="../" so shared assets resolve.
+  var assetBase = root.getAttribute("data-asset-base") || "";
+  var lang = /^es\b/i.test(root.lang || "") ? "es" : "en";
+
+  var STRINGS = {
+    en: {
+      openMenu: "Open menu",
+      closeMenu: "Close menu",
+      playSlideshow: "Play slideshow",
+      pauseSlideshow: "Pause slideshow",
+      autoplayUnavailable: "Autoplay unavailable because reduced motion is enabled",
+      noTranscript: "No text transcript is available for this image-led slide.",
+      goToSlide: "Go to slide",
+      viewSlides: "View slides",
+      hideSlides: "Hide slides",
+      slidesFailed: "The slide presentation could not be loaded. Download the original presentation above.",
+      noFindings: "No findings are available for this interval.",
+      interpretationBoundary: "Interpretation boundary: ",
+      source: "Source: ",
+      findingsFailed: "Finding data could not be loaded.",
+      photoSelection: function (n) { return "Field photograph selection " + n + " is now displayed."; }
+    },
+    es: {
+      openMenu: "Abrir menú",
+      closeMenu: "Cerrar menú",
+      playSlideshow: "Reproducir presentación",
+      pauseSlideshow: "Pausar presentación",
+      autoplayUnavailable: "La reproducción automática no está disponible porque está activada la opción de reducir el movimiento",
+      noTranscript: "Esta diapositiva es principalmente visual y no tiene transcripción de texto.",
+      goToSlide: "Ir a la diapositiva",
+      viewSlides: "Ver diapositivas",
+      hideSlides: "Ocultar diapositivas",
+      slidesFailed: "No se pudo cargar la presentación. Descargue la presentación original arriba.",
+      noFindings: "No hay hallazgos disponibles para este período.",
+      interpretationBoundary: "Límite de interpretación: ",
+      source: "Fuente: ",
+      findingsFailed: "No se pudieron cargar los datos de hallazgos.",
+      photoSelection: function (n) { return "Se muestra la selección " + n + " de fotografías de campo."; }
+    }
+  };
+  var t = STRINGS[lang];
+
+  // Prefix site-relative asset paths; leave absolute URLs untouched.
+  function asset(path) {
+    if (!path || /^(?:[a-z]+:|\/|#)/i.test(path)) return path;
+    return assetBase + path;
+  }
+
+  // Use a language-specific field (e.g. "summary_es") when present, otherwise the English field.
+  function localized(item, key) {
+    if (lang !== "en" && item[key + "_" + lang]) return item[key + "_" + lang];
+    return item[key];
+  }
+
+  // Mark an element lang="en" when it shows English fallback text on a non-English page,
+  // so screen readers switch pronunciation.
+  function markFallback(element, item, key) {
+    if (lang !== "en" && !item[key + "_" + lang]) element.setAttribute("lang", "en");
+    else element.removeAttribute("lang");
+    return element;
+  }
+
+  // Label in the page language followed by a value that may be English fallback text.
+  function labelledText(className, label, item, key) {
+    var paragraph = createElement("p", className, label);
+    paragraph.appendChild(markFallback(createElement("span", "", localized(item, key)), item, key));
+    return paragraph;
+  }
 
   function createElement(tag, className, text) {
     var element = document.createElement(tag);
@@ -19,7 +88,16 @@
   }
 
   function versionPresentationAsset(path) {
-    return path + (path.includes("?") ? "&" : "?") + "v=" + presentationVersion;
+    return asset(path) + (path.includes("?") ? "&" : "?") + "v=" + presentationVersion;
+  }
+
+  // Keep the reader's place (section or slide anchor) when switching language.
+  function initLanguageSwitch() {
+    document.querySelectorAll(".lang-switch a[hreflang]").forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (window.location.hash) link.setAttribute("href", link.getAttribute("href").split("#")[0] + window.location.hash);
+      });
+    });
   }
 
   function initNavigation() {
@@ -37,7 +115,7 @@
       menuButton.addEventListener("click", function () {
         var open = menuButton.getAttribute("aria-expanded") === "true";
         menuButton.setAttribute("aria-expanded", String(!open));
-        menuButton.setAttribute("aria-label", open ? "Open menu" : "Close menu");
+        menuButton.setAttribute("aria-label", open ? t.openMenu : t.closeMenu);
         siteNav.classList.toggle("open", !open);
       });
 
@@ -45,7 +123,7 @@
         var link = event.target.closest("a");
         if (!link) return;
         menuButton.setAttribute("aria-expanded", "false");
-        menuButton.setAttribute("aria-label", "Open menu");
+        menuButton.setAttribute("aria-label", t.openMenu);
         siteNav.classList.remove("open");
       });
     }
@@ -116,8 +194,8 @@
 
     if (reduceMotion) {
       playButton.disabled = true;
-      playButton.setAttribute("aria-label", "Autoplay unavailable because reduced motion is enabled");
-      playButton.setAttribute("title", "Autoplay unavailable because reduced motion is enabled");
+      playButton.setAttribute("aria-label", t.autoplayUnavailable);
+      playButton.setAttribute("title", t.autoplayUnavailable);
     }
 
     function pad(value) { return String(value).padStart(2, "0"); }
@@ -126,8 +204,8 @@
       if (autoplayTimer) window.clearInterval(autoplayTimer);
       autoplayTimer = null;
       playButton.textContent = "▶";
-      playButton.setAttribute("aria-label", "Play slideshow");
-      playButton.setAttribute("title", "Play slideshow");
+      playButton.setAttribute("aria-label", t.playSlideshow);
+      playButton.setAttribute("title", t.playSlideshow);
       playButton.setAttribute("aria-pressed", "false");
     }
 
@@ -148,8 +226,8 @@
       if (reduceMotion || autoplayTimer || figures.length < 2) return;
       updateSlideHash = true;
       playButton.textContent = "Ⅱ";
-      playButton.setAttribute("aria-label", "Pause slideshow");
-      playButton.setAttribute("title", "Pause slideshow");
+      playButton.setAttribute("aria-label", t.pauseSlideshow);
+      playButton.setAttribute("title", t.pauseSlideshow);
       playButton.setAttribute("aria-pressed", "true");
       autoplayTimer = window.setInterval(function () {
         if (activeIndex >= figures.length - 1) {
@@ -166,7 +244,9 @@
       currentLabel.textContent = pad(activeIndex + 1);
       totalLabel.textContent = pad(slides.length);
       progress.style.width = (((activeIndex + 1) / slides.length) * 100) + "%";
-      transcript.textContent = slide.transcript || "No text transcript is available for this image-led slide.";
+      transcript.textContent = localized(slide, "transcript") || t.noTranscript;
+      if (localized(slide, "transcript")) markFallback(transcript, slide, "transcript");
+      else transcript.removeAttribute("lang");
       previousButton.disabled = activeIndex === 0;
       nextButton.disabled = activeIndex === slides.length - 1;
       thumbnails.forEach(function (button, index) {
@@ -203,19 +283,19 @@
         figure.id = "slide-" + pad(slide.number);
         var image = createElement("img");
         image.src = versionPresentationAsset(slide.src);
-        image.alt = slide.alt;
+        image.alt = localized(slide, "alt");
         image.width = 1600;
         image.height = 900;
         image.loading = index < 2 ? "eager" : "lazy";
         image.decoding = "async";
         figure.appendChild(image);
-        figure.appendChild(createElement("figcaption", "", slide.title));
+        figure.appendChild(markFallback(createElement("figcaption", "", localized(slide, "title")), slide, "title"));
         track.appendChild(figure);
         figures.push(figure);
 
         var thumbnailButton = createElement("button", "slide-thumb");
         thumbnailButton.type = "button";
-        thumbnailButton.setAttribute("aria-label", "Go to slide " + slide.number + ": " + slide.title);
+        thumbnailButton.setAttribute("aria-label", t.goToSlide + " " + slide.number + ": " + localized(slide, "title"));
         var thumbnailImage = createElement("img");
         thumbnailImage.src = versionPresentationAsset(slide.thumbnail);
         thumbnailImage.alt = "";
@@ -242,7 +322,7 @@
     thumbnailToggle.addEventListener("click", function () {
       var expanded = thumbnailToggle.getAttribute("aria-expanded") === "true";
       thumbnailToggle.setAttribute("aria-expanded", String(!expanded));
-      thumbnailToggle.textContent = expanded ? "View slides" : "Hide slides";
+      thumbnailToggle.textContent = expanded ? t.viewSlides : t.hideSlides;
       thumbnailPanel.hidden = expanded;
       stopAutoplay();
     });
@@ -276,7 +356,7 @@
         buildViewer(data);
       })
       .catch(function () {
-        loading.textContent = "The slide presentation could not be loaded. Download the original presentation above.";
+        loading.textContent = t.slidesFailed;
         loading.classList.add("slide-error");
       });
   }
@@ -294,23 +374,23 @@
         return activePeriod === "all" || (item.periods || []).indexOf(activePeriod) !== -1;
       });
       if (!filtered.length) {
-        list.appendChild(createElement("p", "finding-source", "No findings are available for this interval."));
+        list.appendChild(createElement("p", "finding-source", t.noFindings));
         return;
       }
 
       filtered.forEach(function (item) {
         var article = createElement("article", "finding-item");
         var copy = createElement("div", "finding-copy");
-        copy.appendChild(createElement("h3", "", item.title));
-        copy.appendChild(createElement("p", "", item.summary));
-        copy.appendChild(createElement("p", "finding-uncertainty", "Interpretation boundary: " + item.uncertainty));
-        copy.appendChild(createElement("p", "finding-source", "Source: " + item.source));
+        copy.appendChild(markFallback(createElement("h3", "", localized(item, "title")), item, "title"));
+        copy.appendChild(markFallback(createElement("p", "", localized(item, "summary")), item, "summary"));
+        copy.appendChild(labelledText("finding-uncertainty", t.interpretationBoundary, item, "uncertainty"));
+        copy.appendChild(labelledText("finding-source", t.source, item, "source"));
         article.appendChild(copy);
         if (item.figure) {
           var figure = createElement("figure", "finding-figure");
           var image = createElement("img");
-          image.src = item.figure;
-          image.alt = item.title;
+          image.src = asset(item.figure);
+          image.alt = localized(item, "title");
           image.loading = "lazy";
           figure.appendChild(image);
           article.appendChild(figure);
@@ -332,7 +412,7 @@
     });
 
     fetchJson(versionPresentationAsset("data/findings.json")).then(function (data) { findings = data; render(); }).catch(function () {
-      list.appendChild(createElement("p", "finding-source", "Finding data could not be loaded."));
+      list.appendChild(createElement("p", "finding-source", t.findingsFailed));
     });
   }
 
@@ -379,29 +459,29 @@
     var status = document.getElementById("archive-status");
     if (!gallery || !button) return;
 
-    var basePath = "assets/img/san-emilio-archive/";
+    var basePath = asset("assets/img/san-emilio-archive/");
     var photos = {
       people: [
-        ["51330060508_5b337174d9_o.jpg", "San Emilio field team"],
-        ["51330575099_57988742b5_o.jpg", "Fieldwork in the San Emilio plot"],
-        ["51330575834_c7fa5303a1_o.jpg", "Field researchers recording observations beside a fruiting tree"],
-        ["51329115037_a2374b37f2_o.jpg", "Researcher measuring the circumference of a large tree"],
-        ["51330843870_7f484fb501_o.jpg", "Researcher working above the forest understory"],
-        ["51329115027_b7f199dd0e_o.jpg", "Field team measuring and documenting a large tree"],
-        ["51330575464_daa5fdd748_o.jpg", "Researchers visiting the plot during the dry season"],
-        ["51330060483_b2d672fe33_o.jpg", "San Emilio field team with archived field materials"]
+        ["51330060508_5b337174d9_o.jpg", "San Emilio field team", "Equipo de campo de San Emilio"],
+        ["51330575099_57988742b5_o.jpg", "Fieldwork in the San Emilio plot", "Trabajo de campo en la parcela San Emilio"],
+        ["51330575834_c7fa5303a1_o.jpg", "Field researchers recording observations beside a fruiting tree", "Investigadores de campo registrando observaciones junto a un árbol con frutos"],
+        ["51329115037_a2374b37f2_o.jpg", "Researcher measuring the circumference of a large tree", "Investigador midiendo la circunferencia de un árbol grande"],
+        ["51330843870_7f484fb501_o.jpg", "Researcher working above the forest understory", "Investigador trabajando sobre el sotobosque"],
+        ["51329115027_b7f199dd0e_o.jpg", "Field team measuring and documenting a large tree", "Equipo de campo midiendo y documentando un árbol grande"],
+        ["51330575464_daa5fdd748_o.jpg", "Researchers visiting the plot during the dry season", "Investigadores visitando la parcela durante la estación seca"],
+        ["51330060483_b2d672fe33_o.jpg", "San Emilio field team with archived field materials", "Equipo de campo de San Emilio con materiales de campo de archivo"]
       ],
       site: [
-        ["51329115167_1d41ec85eb_o.jpg", "San Emilio forest landscape"],
-        ["51329115342_fb81d558d9_o.jpg", "Mapped forest stems and understory"],
-        ["51330844445_3a983a80f6_o.jpg", "Seasonal forest detail"],
-        ["51330060678_b969b30705_o.jpg", "Wet-season canopy and woody vegetation in the plot"],
-        ["51329851431_8b32fc47e6_o.jpg", "Woody vine and epiphytic growth in the forest canopy"],
-        ["51329115412_4b67b8f4cb_o.jpg", "Dry-season vegetation within the San Emilio plot"],
-        ["51329851776_69220474af_o.jpg", "Forest vegetation within the San Emilio plot"],
-        ["51330060543_d249b8a821_o.jpg", "Woody vegetation in the San Emilio plot"],
-        ["51330575399_f90e2669fe_o.jpg", "Looking upward through the San Emilio seasonal forest canopy"],
-        ["51330844730_61a61e2207_o.jpg", "Trees and understory vegetation in the San Emilio plot"]
+        ["51329115167_1d41ec85eb_o.jpg", "San Emilio forest landscape", "Paisaje del bosque de San Emilio"],
+        ["51329115342_fb81d558d9_o.jpg", "Mapped forest stems and understory", "Tallos mapeados y sotobosque"],
+        ["51330844445_3a983a80f6_o.jpg", "Seasonal forest detail", "Detalle del bosque estacional"],
+        ["51330060678_b969b30705_o.jpg", "Wet-season canopy and woody vegetation in the plot", "Dosel de la estación lluviosa y vegetación leñosa en la parcela"],
+        ["51329851431_8b32fc47e6_o.jpg", "Woody vine and epiphytic growth in the forest canopy", "Liana y epífitas en el dosel del bosque"],
+        ["51329115412_4b67b8f4cb_o.jpg", "Dry-season vegetation within the San Emilio plot", "Vegetación de la estación seca en la parcela San Emilio"],
+        ["51329851776_69220474af_o.jpg", "Forest vegetation within the San Emilio plot", "Vegetación forestal en la parcela San Emilio"],
+        ["51330060543_d249b8a821_o.jpg", "Woody vegetation in the San Emilio plot", "Vegetación leñosa en la parcela San Emilio"],
+        ["51330575399_f90e2669fe_o.jpg", "Looking upward through the San Emilio seasonal forest canopy", "Vista hacia arriba a través del dosel del bosque estacional de San Emilio"],
+        ["51330844730_61a61e2207_o.jpg", "Trees and understory vegetation in the San Emilio plot", "Árboles y vegetación del sotobosque en la parcela San Emilio"]
       ]
     };
     var slots = Array.from(gallery.querySelectorAll("img"));
@@ -425,11 +505,11 @@
       window.setTimeout(function () {
         slots.forEach(function (image, index) {
           image.src = basePath + selection[index][0];
-          image.alt = selection[index][1];
+          image.alt = lang === "es" ? selection[index][2] : selection[index][1];
         });
         gallery.classList.remove("is-shuffling");
         shuffleCount += 1;
-        if (status) status.textContent = "Field photograph selection " + shuffleCount + " is now displayed.";
+        if (status) status.textContent = t.photoSelection(shuffleCount);
       }, reduceMotion ? 0 : 180);
     }
 
@@ -438,6 +518,7 @@
   }
 
   initNavigation();
+  initLanguageSwitch();
   initReveals();
   initSlideshow();
   initFindings();

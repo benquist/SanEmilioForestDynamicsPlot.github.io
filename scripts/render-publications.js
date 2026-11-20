@@ -85,8 +85,17 @@ function validatePublications(data) {
   return data;
 }
 
-function renderPublications(data) {
+// Pages that carry the generated list. Publication titles, citations and summaries are
+// English-only; the Spanish page marks each card lang="en" and localizes only the link label.
+const pages = [
+  { file: "index.html", linkLabel: "Open publication ↗" },
+  { file: "es/index.html", linkLabel: "Abrir publicación ↗", contentLang: "en", linkLang: "es" }
+];
+
+function renderPublications(data, page = pages[0]) {
   validatePublications(data);
+  const articleLang = page.contentLang ? ` lang="${page.contentLang}"` : "";
+  const linkLang = page.linkLang ? ` lang="${page.linkLang}"` : "";
   // Stable sort preserves JSON order within each year, matching the former browser renderer.
   return [...data].sort((a, b) => b.year - a.year).map((item) => {
     let citation = item.journal;
@@ -97,12 +106,12 @@ function renderPublications(data) {
     }
     const href = item.doi ? `https://doi.org/${item.doi}` : item.url;
     return [
-      `          <article class="pub-item" role="listitem" data-publication-id="${escapeHtml(item.id)}" data-topic-tags="${escapeHtml(item.topicTags.join(" "))}">`,
+      `          <article class="pub-item" role="listitem" data-publication-id="${escapeHtml(item.id)}" data-topic-tags="${escapeHtml(item.topicTags.join(" "))}"${articleLang}>`,
       `            <div class="pub-year">${escapeHtml(item.year)}</div>`,
       '            <div class="pub-details">',
       `              <h3>${escapeHtml(item.title)}</h3>`,
       `              <p>${escapeHtml(`${item.authors} · ${citation}`)}</p>`,
-      `              <a class="pub-link" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">Open publication ↗</a>`,
+      `              <a class="pub-link" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer"${linkLang}>${escapeHtml(page.linkLabel)}</a>`,
       "            </div>",
       `            <div class="pub-summary">${escapeHtml(item.summary)}</div>`,
       "          </article>"
@@ -110,15 +119,15 @@ function renderPublications(data) {
   }).join("\n");
 }
 
-function updateHtml(html, data) {
+function updateHtml(html, data, page = pages[0]) {
   const start = html.indexOf(startMarker);
   const end = html.indexOf(endMarker);
   if (start < 0 || end < start || html.indexOf(startMarker, start + 1) !== -1 ||
       html.indexOf(endMarker, end + 1) !== -1) {
-    throw new Error("index.html must contain exactly one ordered pair of generated publication markers");
+    throw new Error(`${page.file} must contain exactly one ordered pair of generated publication markers`);
   }
   return html.slice(0, start + startMarker.length) + "\n" +
-    renderPublications(data) + "\n" + html.slice(end);
+    renderPublications(data, page) + "\n" + html.slice(end);
 }
 
 function main() {
@@ -127,19 +136,21 @@ function main() {
     throw new Error("Usage: node scripts/render-publications.js [--check]");
   }
   const root = path.resolve(__dirname, "..");
-  const indexPath = path.join(root, "index.html");
   const data = JSON.parse(fs.readFileSync(path.join(root, "data/publications.json"), "utf8"));
-  const html = fs.readFileSync(indexPath, "utf8");
-  const generated = updateHtml(html, data);
-  if (args[0] === "--check") {
-    if (generated !== html) {
-      throw new Error("Static publications are stale; run node scripts/render-publications.js");
+  pages.forEach((page) => {
+    const pagePath = path.join(root, page.file);
+    const html = fs.readFileSync(pagePath, "utf8");
+    const generated = updateHtml(html, data, page);
+    if (args[0] === "--check") {
+      if (generated !== html) {
+        throw new Error(`Static publications in ${page.file} are stale; run node scripts/render-publications.js`);
+      }
+      console.log(`Static publications in ${page.file} match JSON (${data.length} cards).`);
+    } else {
+      if (generated !== html) fs.writeFileSync(pagePath, generated);
+      console.log(`Rendered ${data.length} publication cards in ${page.file}.`);
     }
-    console.log(`Static publications match JSON (${data.length} cards).`);
-  } else {
-    if (generated !== html) fs.writeFileSync(indexPath, generated);
-    console.log(`Rendered ${data.length} publication cards in index.html.`);
-  }
+  });
 }
 
 if (require.main === module) {
@@ -151,4 +162,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { escapeHtml, validatePublications, renderPublications, updateHtml };
+module.exports = { escapeHtml, validatePublications, renderPublications, updateHtml, pages };

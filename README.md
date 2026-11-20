@@ -92,8 +92,9 @@ The website's [publications dataset](data/publications.json) provides additional
 ## Repository contents
 
 - `index.html` — Public site with plot overview, census history, presentation, findings, publications, field archive, and data-access information.
+- `es/index.html` — Spanish version of the same page (see Spanish version below).
 - `assets/css/styles.css` — Responsive visual system and presentation components.
-- `assets/js/main.js` — Navigation, slide viewer, filters, and archive interactions.
+- `assets/js/main.js` — Navigation, language switch, slide viewer, filters, and archive interactions, with English and Spanish interface strings.
 - `assets/img/` — Project-owned field photographs, maps, logos, and figure assets.
 - `assets/presentation/` — Original research presentation and 46 optimized slide images.
 - `data/slides.json` — Extracted slide titles, transcripts, chapters, and image paths.
@@ -101,7 +102,7 @@ The website's [publications dataset](data/publications.json) provides additional
 - `data/findings.json` — Findings summaries with census-period tags and figure references.
 - `scripts/render-publications.js` — Dependency-free Node.js publication-card generator and freshness check.
 - `scripts/export_presentation.py` — Repeatable PDF-to-WebP slide renderer and PowerPoint text extractor.
-- `sitemap.xml` — Sitemap containing only the canonical homepage URL.
+- `sitemap.xml` — Sitemap listing the English homepage and the Spanish page, with `hreflang` alternates.
 
 ## Local development
 
@@ -124,11 +125,22 @@ node --check scripts/render-publications.js
 node --check assets/js/main.js
 ```
 
-The generator replaces only the clearly marked publication block in `index.html`, escapes text and attributes, and rejects invalid metadata or non-HTTP(S) links. It sorts cards newest first, retaining JSON order for ties. Do not edit the generated block manually; keep the JSON and regenerated HTML together when publishing. `--check` exits unsuccessfully if the generated HTML is stale.
+The generator replaces only the clearly marked publication block in `index.html` and `es/index.html`, escapes text and attributes, and rejects invalid metadata or non-HTTP(S) links. It sorts cards newest first, retaining JSON order for ties. Do not edit the generated block manually; keep the JSON and regenerated HTML together when publishing. `--check` exits unsuccessfully if the generated HTML is stale.
 
 Publication cards and links are served directly in HTML, including when JavaScript is disabled. Topic controls remain hidden until initialized; JavaScript only hides or shows the existing cards and does not fetch publication JSON. The publication list intentionally does not use the JavaScript-dependent reveal animation, so its content remains visible without JavaScript.
 
-Keep the homepage canonical link and the single URL in `sitemap.xml` aligned with the public homepage URL; do not add section fragments or speculative modification dates.
+Keep each page's canonical link and the two URLs in `sitemap.xml` aligned with the public homepage and `/es/` URLs; do not add section fragments or speculative modification dates.
+
+## Spanish version
+
+`es/index.html` is a hand-maintained Spanish translation of `index.html`. An EN | ES switch in the header links the two pages and keeps the current section or slide anchor. Both pages declare `hreflang` alternates; English is `x-default`.
+
+- **Keep the pages in step.** Any text change to `index.html` needs the matching change in `es/index.html`. The two files share the same section IDs, filter values and data attributes.
+- **Asset paths.** `es/index.html` sets `data-asset-base="../"` on `<html>`; its static `src`/`href` paths use `../`, and `main.js` prefixes JSON, slide, figure and archive-photo paths with that base.
+- **Interface strings.** Text written by JavaScript (button labels, error messages, "Interpretation boundary", photo alt text) lives in the `STRINGS` table and photo lists in `main.js`.
+- **Still in English on the Spanish page:** findings summaries (`data/findings.json`), slide titles and transcripts (`data/slides.json`), and publication titles and summaries. The page says so where each appears. `main.js` already reads optional Spanish fields — `title_es`, `summary_es`, `uncertainty_es`, `source_es` in findings; `title_es`, `alt_es`, `transcript_es` in slides — and falls back to English when they are absent. `scripts/export_presentation.py` rewrites `data/slides.json`, so Spanish slide text added there would be lost on the next export.
+- **Number format.** The Spanish page uses a decimal comma and a space as the thousands separator (15,64 ha; 34 000), with no separator in four-digit numbers (1500 mm).
+- **Cache version.** When CSS or JS changes, update the `?v=` query string in both pages and `presentationVersion` in `main.js` together.
 
 ## Presentation workflow
 
