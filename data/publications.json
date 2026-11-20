@@ -8,6 +8,7 @@
     "doi": "10.1111/nph.15304",
     "topicTags": ["functional-change", "climate-response", "community-ecology"],
     "summary": "Used forest inventories from 103 lowland tropical sites and temporal composition shifts in three forests to show that the proportional abundance of isoprene-emitting trees increased with mean annual temperature, decreased with dry-season length, and increased through time under anomalous heat and, more moderately, drought.",
+    "summary_es": "Usó inventarios forestales de 103 sitios tropicales de tierras bajas y cambios temporales en la composición de tres bosques para mostrar que la abundancia proporcional de árboles emisores de isopreno aumentó con la temperatura media anual, disminuyó con la duración de la estación seca y aumentó a lo largo del tiempo bajo calor anómalo y, de forma más moderada, bajo sequía.",
     "sourceNotes": "DOI record and user-provided study summary"
   },
   {
@@ -19,6 +20,7 @@
     "doi": "10.1111/j.1365-2486.2010.02326.x",
     "topicTags": ["functional-change", "drought"],
     "summary": "The study evaluated long-term floristic and functional shifts in a Neotropical forest, with emphasis on disturbance history and drought exposure.",
+    "summary_es": "El estudio evaluó cambios florísticos y funcionales de largo plazo en un bosque neotropical, con énfasis en la historia de perturbaciones y la exposición a la sequía.",
     "sourceNotes": "User-provided PDF: Enquist_Enquist_2011_GCB.pdf"
   },
   {
@@ -30,6 +32,7 @@
     "doi": "10.1002/ecm.1408",
     "topicTags": ["functional-change"],
     "summary": "Used three censuses across 30 years to quantify population dynamics, species richness, functional diversity, and directional composition change.",
+    "summary_es": "Usó tres censos a lo largo de 30 años para cuantificar la dinámica poblacional, la riqueza de especies, la diversidad funcional y el cambio direccional en la composición.",
     "sourceNotes": "User-provided PDF: Swenson_etal_2020_EcolMong.pdf"
   },
   {
@@ -44,6 +47,7 @@
     "doi": "10.1111/1365-2435.12579",
     "topicTags": ["functional-change"],
     "summary": "Measured leaf functional traits, abiotic conditions, and stand structure across a 110-year chronosequence in a Costa Rican tropical dry forest. Older stands differed from younger stands in species composition, above-ground biomass, and several community-weighted mean traits; community-weighted trait variances did not generally change with stand age.",
+    "summary_es": "Midió rasgos funcionales foliares, condiciones abióticas y estructura del rodal a lo largo de una cronosecuencia de 110 años en un bosque tropical seco de Costa Rica. Los rodales más viejos difirieron de los más jóvenes en composición de especies, biomasa aérea y varios rasgos medios ponderados por la comunidad; en general, las varianzas de los rasgos ponderadas por la comunidad no cambiaron con la edad del rodal.",
     "sourceNotes": "Crossref DOI metadata and abstract"
   },
   {
@@ -55,6 +59,7 @@
     "doi": "10.1002/ecs2.3824",
     "topicTags": ["drought", "remote-sensing"],
     "summary": "Integrated long-term plot observations with satellite metrics to evaluate chronic and episodic drought signals and post-ENSO canopy responses.",
+    "summary_es": "Integró observaciones de largo plazo de la parcela con métricas satelitales para evaluar señales de sequía crónica y episódica y las respuestas del dosel posteriores al ENSO.",
     "sourceNotes": "User-provided PDF: Huang_etal_2021_Ecosphere...pdf"
   },
   {
@@ -66,6 +71,7 @@
     "doi": "10.1111/j.1466-8238.2008.00427.x",
     "topicTags": ["species-distribution", "community-ecology"],
     "summary": "Developed improved abundance prediction methods from presence-absence data, relevant to scaling biodiversity inference from sparse observations.",
+    "summary_es": "Desarrolló métodos mejorados para predecir la abundancia a partir de datos de presencia-ausencia, pertinentes para escalar inferencias sobre biodiversidad a partir de observaciones escasas.",
     "sourceNotes": "User-provided publication list"
   },
   {
@@ -77,6 +83,7 @@
     "doi": "10.1038/44819",
     "topicTags": ["allometry", "ecological-scaling"],
     "summary": "An allometric study linking plant production and life-history variation to broad scaling relationships.",
+    "summary_es": "Estudio alométrico que vincula la producción vegetal y la variación en las historias de vida con relaciones de escalamiento generales.",
     "sourceNotes": "User-provided publication list"
   },
   {
@@ -88,6 +95,7 @@
     "doi": "10.1111/j.1461-0248.2009.01328.x",
     "topicTags": ["species-area", "ecological-scaling"],
     "summary": "Proposed a universal species-area relationship spanning plots to biomes, useful for framing biodiversity scaling.",
+    "summary_es": "Propuso una relación especies-área universal que abarca desde parcelas hasta biomas, útil para plantear el escalamiento de la biodiversidad.",
     "sourceNotes": "User-provided publication list"
   },
   {
@@ -99,6 +107,7 @@
     "doi": "10.2307/2387973",
     "topicTags": ["ant-ecology", "foraging"],
     "summary": "Described bucket-brigade foraging behavior in leaf-cutter ants, part of the broader ecological context of tropical systems.",
+    "summary_es": "Describió el forrajeo en cadena de relevos (\"bucket brigade\") en hormigas cortadoras de hojas, como parte del contexto ecológico más amplio de los sistemas tropicales.",
     "sourceNotes": "User-provided publication list"
   },
   {
@@ -110,6 +119,7 @@
     "doi": "10.1890/11-0740.1",
     "topicTags": ["allometry", "drought", "functional-change"],
     "summary": "Examined how allometry and resource variability shape annual growth and reproduction in a tropical dry-forest tree.",
+    "summary_es": "Examinó cómo la alometría y la variabilidad de los recursos influyen en el crecimiento y la reproducción anuales de un árbol de bosque tropical seco.",
     "sourceNotes": "User-provided publication list"
   },
   {
@@ -121,6 +131,7 @@
     "doi": "10.2307/1936397",
     "topicTags": ["ant-ecology", "foraging"],
     "summary": "Analyzed plant selection and foraging patterns in leaf-cutting ants, contributing to dry-forest trophic context.",
+    "summary_es": "Analizó la selección de plantas y los patrones de forrajeo en hormigas cortadoras de hojas, como aporte al contexto trófico del bosque seco.",
     "sourceNotes": "User-provided publication list"
   },
   {
@@ -132,6 +143,7 @@
     "url": "https://www.jstor.org/stable/4218430",
     "topicTags": ["ant-ecology", "foraging"],
     "summary": "Explored host-plant selection and diet diversity in tropical leafcutting ants with an optimal foraging framework.",
+    "summary_es": "Exploró la selección de plantas hospederas y la diversidad de la dieta en hormigas cortadoras de hojas tropicales mediante un marco de forrajeo óptimo.",
     "sourceNotes": "User-provided publication list"
   },
   {
@@ -143,6 +155,7 @@
     "doi": "10.1890/08-1025.1",
     "topicTags": ["community-ecology", "functional-change"],
     "summary": "Described opposing assembly mechanisms in a neotropical dry forest, relevant to functional and phylogenetic community ecology.",
+    "summary_es": "Describió mecanismos de ensamblaje opuestos en un bosque seco neotropical, pertinentes para la ecología de comunidades funcional y filogenética.",
     "sourceNotes": "User-provided publication list"
   },
   {
@@ -154,6 +167,7 @@
     "doi": "10.2307/1938806",
     "topicTags": ["lianas", "functional-change"],
     "summary": "Used Bursera simaruba to illustrate lianas as structural parasites in tropical forest ecology.",
+    "summary_es": "Usó Bursera simaruba para ilustrar las lianas como parásitos estructurales en la ecología de bosques tropicales.",
     "sourceNotes": "User-provided publication list"
   },
   {
@@ -165,6 +179,7 @@
     "doi": "10.1890/0012-9658(2006)87[2418:TPAPOS]2.0.CO;2",
     "topicTags": ["community-ecology", "phylogenetics"],
     "summary": "Discussed how scale dependence affects community phylogenetics and ecological inference.",
+    "summary_es": "Analizó cómo la dependencia de la escala afecta la filogenética de comunidades y la inferencia ecológica.",
     "sourceNotes": "User-provided publication list"
   }
 ]

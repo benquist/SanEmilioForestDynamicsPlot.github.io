@@ -133,12 +133,12 @@ Keep each page's canonical link and the two URLs in `sitemap.xml` aligned with t
 
 ## Spanish version
 
-`es/index.html` is a hand-maintained Spanish translation of `index.html`. An EN | ES switch in the header links the two pages and keeps the current section or slide anchor. Both pages declare `hreflang` alternates; English is `x-default`.
+`es/index.html` is a hand-maintained Spanish translation of `index.html`. An "English | Español" tab switch in the header (shortened to EN | ES below 420 px) links the two pages and keeps the current section or slide anchor. Both pages declare `hreflang` alternates; English is `x-default`.
 
 - **Keep the pages in step.** Any text change to `index.html` needs the matching change in `es/index.html`. The two files share the same section IDs, filter values and data attributes.
 - **Asset paths.** `es/index.html` sets `data-asset-base="../"` on `<html>`; its static `src`/`href` paths use `../`, and `main.js` prefixes JSON, slide, figure and archive-photo paths with that base.
 - **Interface strings.** Text written by JavaScript (button labels, error messages, "Interpretation boundary", photo alt text) lives in the `STRINGS` table and photo lists in `main.js`.
-- **Still in English on the Spanish page:** findings summaries (`data/findings.json`), slide titles and transcripts (`data/slides.json`), and publication titles and summaries. The page says so where each appears. `main.js` already reads optional Spanish fields — `title_es`, `summary_es`, `uncertainty_es`, `source_es` in findings; `title_es`, `alt_es`, `transcript_es` in slides — and falls back to English when they are absent. `scripts/export_presentation.py` rewrites `data/slides.json`, so Spanish slide text added there would be lost on the next export.
+- **Where the Spanish text lives.** Findings: `title_es`, `summary_es`, `uncertainty_es`, `source_es` in `data/findings.json`. Publications: `summary_es` in `data/publications.json`, rendered into `es/index.html` by `scripts/render-publications.js`; titles and author lists stay in their published language and are marked `lang="en"`. Slides: `data/slides_es.json` (number, title, alt, transcript), merged by `main.js` on the Spanish page. It is kept separate because `scripts/export_presentation.py` rewrites `data/slides.json`; after re-exporting the deck, update `data/slides_es.json` to match. Any missing Spanish field falls back to English and is marked `lang="en"`. The slide images themselves are in English.
 - **Number format.** The Spanish page uses a decimal comma and a space as the thousands separator (15,64 ha; 34 000), with no separator in four-digit numbers (1500 mm).
 - **Cache version.** When CSS or JS changes, update the `?v=` query string in both pages and `presentationVersion` in `main.js` together.
 

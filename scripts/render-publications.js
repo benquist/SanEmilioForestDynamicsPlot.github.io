@@ -9,7 +9,7 @@ const startMarker = "          <!-- BEGIN GENERATED PUBLICATIONS: scripts/render
 const endMarker = "          <!-- END GENERATED PUBLICATIONS -->";
 const fields = new Set([
   "id", "title", "authors", "year", "journal", "doi", "url",
-  "topicTags", "summary", "sourceNotes", "volume", "issue", "pages"
+  "topicTags", "summary", "summary_es", "sourceNotes", "volume", "issue", "pages"
 ]);
 
 function escapeHtml(value) {
@@ -66,7 +66,7 @@ function validatePublications(data) {
         new Set(item.topicTags).size !== item.topicTags.length) {
       throw new Error(`${label}.topicTags must be nonempty, unique lowercase slugs`);
     }
-    ["volume", "issue", "pages", "sourceNotes"].forEach((key) => {
+    ["volume", "issue", "pages", "sourceNotes", "summary_es"].forEach((key) => {
       if (Object.hasOwn(item, key)) requireText(item[key], `${label}.${key}`);
     });
     if ((item.issue || item.pages) && !item.volume) {
@@ -85,17 +85,18 @@ function validatePublications(data) {
   return data;
 }
 
-// Pages that carry the generated list. Publication titles, citations and summaries are
-// English-only; the Spanish page marks each card lang="en" and localizes only the link label.
+// Pages that carry the generated list. Titles and citations stay in their published
+// language (English) and are marked lang="en" on the Spanish page; summaries use the
+// page-language field (summary_es) when present and fall back to English otherwise.
 const pages = [
-  { file: "index.html", linkLabel: "Open publication ↗" },
-  { file: "es/index.html", linkLabel: "Abrir publicación ↗", contentLang: "en", linkLang: "es" }
+  { file: "index.html", lang: "en", linkLabel: "Open publication ↗" },
+  { file: "es/index.html", lang: "es", linkLabel: "Abrir publicación ↗" }
 ];
 
 function renderPublications(data, page = pages[0]) {
   validatePublications(data);
-  const articleLang = page.contentLang ? ` lang="${page.contentLang}"` : "";
-  const linkLang = page.linkLang ? ` lang="${page.linkLang}"` : "";
+  const translated = page.lang !== "en";
+  const sourceLang = translated ? ' lang="en"' : "";
   // Stable sort preserves JSON order within each year, matching the former browser renderer.
   return [...data].sort((a, b) => b.year - a.year).map((item) => {
     let citation = item.journal;
@@ -105,15 +106,18 @@ function renderPublications(data, page = pages[0]) {
       if (item.pages) citation += `: ${item.pages}`;
     }
     const href = item.doi ? `https://doi.org/${item.doi}` : item.url;
+    const localizedSummary = translated ? item[`summary_${page.lang}`] : undefined;
+    const summary = localizedSummary || item.summary;
+    const summaryLang = translated && !localizedSummary ? ' lang="en"' : "";
     return [
-      `          <article class="pub-item" role="listitem" data-publication-id="${escapeHtml(item.id)}" data-topic-tags="${escapeHtml(item.topicTags.join(" "))}"${articleLang}>`,
+      `          <article class="pub-item" role="listitem" data-publication-id="${escapeHtml(item.id)}" data-topic-tags="${escapeHtml(item.topicTags.join(" "))}">`,
       `            <div class="pub-year">${escapeHtml(item.year)}</div>`,
       '            <div class="pub-details">',
-      `              <h3>${escapeHtml(item.title)}</h3>`,
-      `              <p>${escapeHtml(`${item.authors} · ${citation}`)}</p>`,
-      `              <a class="pub-link" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer"${linkLang}>${escapeHtml(page.linkLabel)}</a>`,
+      `              <h3${sourceLang}>${escapeHtml(item.title)}</h3>`,
+      `              <p${sourceLang}>${escapeHtml(`${item.authors} · ${citation}`)}</p>`,
+      `              <a class="pub-link" href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(page.linkLabel)}</a>`,
       "            </div>",
-      `            <div class="pub-summary">${escapeHtml(item.summary)}</div>`,
+      `            <div class="pub-summary"${summaryLang}>${escapeHtml(summary)}</div>`,
       "          </article>"
     ].join("\n");
   }).join("\n");

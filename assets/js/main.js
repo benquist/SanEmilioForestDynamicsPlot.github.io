@@ -2,7 +2,7 @@
   "use strict";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var presentationVersion = "i18n-es-1";
+  var presentationVersion = "i18n-es-2";
   var root = document.documentElement;
   // Pages below the site root (es/index.html) set data-asset-base="../" so shared assets resolve.
   var assetBase = root.getAttribute("data-asset-base") || "";
@@ -350,9 +350,30 @@
 
     window.addEventListener("resize", function () { if (!userScrolling) showSlide(activeIndex); });
 
+    // Translated slide text lives in data/slides_<lang>.json (number, title, alt, transcript),
+    // separate from slides.json so scripts/export_presentation.py can regenerate the English file.
+    function mergeTranslation(data) {
+      if (lang === "en") return data;
+      return fetchJson(versionPresentationAsset("data/slides_" + lang + ".json"))
+        .then(function (translated) {
+          var byNumber = {};
+          (Array.isArray(translated) ? translated : []).forEach(function (entry) { if (entry && entry.number) byNumber[entry.number] = entry; });
+          data.forEach(function (slide) {
+            var entry = byNumber[slide.number];
+            if (!entry) return;
+            ["title", "alt", "transcript"].forEach(function (key) { if (entry[key]) slide[key + "_" + lang] = entry[key]; });
+          });
+          return data;
+        })
+        .catch(function () { return data; });
+    }
+
     fetchJson(versionPresentationAsset("data/slides.json"))
       .then(function (data) {
         if (!Array.isArray(data) || !data.length) throw new Error("No slides found");
+        return mergeTranslation(data);
+      })
+      .then(function (data) {
         buildViewer(data);
       })
       .catch(function () {

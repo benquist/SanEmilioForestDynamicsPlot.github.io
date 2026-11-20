@@ -3,44 +3,64 @@
     "id": "f05",
     "periods": ["climate-trait"],
     "title": "Isoprene-emitting trees and climate response",
+    "title_es": "Árboles emisores de isopreno y respuesta al clima",
     "summary": "Using forest inventory data, Taylor et al. estimated the proportional abundance of isoprene-emitting trees (pIE) at 103 lowland tropical sites and quantified temporal composition shifts in three forests exposed to anomalous warming or drought. Across the landscape, pIE increased with mean annual temperature but decreased with dry-season length; through time, it increased strongly under high temperatures and more moderately following drought. The study identifies isoprene emission as a plant trait associated with species responses to climate and suggests that community selection for isoprene-emitting species may contribute to forest resilience.",
+    "summary_es": "Con datos de inventarios forestales, Taylor et al. estimaron la abundancia proporcional de árboles emisores de isopreno (pIE) en 103 sitios tropicales de tierras bajas y cuantificaron los cambios temporales en la composición de tres bosques expuestos a calentamiento anómalo o sequía. A escala de paisaje, la pIE aumentó con la temperatura media anual, pero disminuyó con la duración de la estación seca; a lo largo del tiempo, aumentó fuertemente con temperaturas altas y de forma más moderada después de la sequía. El estudio identifica la emisión de isopreno como un rasgo vegetal asociado a las respuestas de las especies al clima y sugiere que la selección de especies emisoras de isopreno en la comunidad podría contribuir a la resiliencia del bosque.",
     "uncertainty": "The study combines broad landscape comparisons with temporal analyses across different forests and stressors. Isoprene emission may trade off with strategies such as leaf deciduousness, and the reported associations do not isolate a single causal mechanism or establish that isoprene alone determines resilience at San Emilio.",
-    "source": "Taylor et al. 2018"
+    "uncertainty_es": "El estudio combina comparaciones amplias a escala de paisaje con análisis temporales en distintos bosques y factores de estrés. La emisión de isopreno puede implicar compromisos con estrategias como la caducifolia, y las asociaciones reportadas no aíslan un único mecanismo causal ni establecen que el isopreno por sí solo determine la resiliencia en San Emilio.",
+    "source": "Taylor et al. 2018",
+    "source_es": "Taylor et al. 2018"
   },
   {
     "id": "f01",
     "periods": ["1976-1996"],
     "title": "Floristic and functional change, 1976–1996",
+    "title_es": "Cambio florístico y funcional, 1976–1996",
     "summary": "Enquist and Enquist used the first two surveys to assess changes in species composition, stem abundance, and functional composition in relation to disturbance history and drought exposure.",
+    "summary_es": "Enquist y Enquist usaron los dos primeros muestreos para evaluar cambios en la composición de especies, la abundancia de tallos y la composición funcional en relación con la historia de perturbaciones y la exposición a la sequía.",
     "uncertainty": "The comparison is observational, and drought, succession, prior land use, and other disturbances cannot be separated as independent causes.",
+    "uncertainty_es": "La comparación es observacional, y la sequía, la sucesión, el uso previo del suelo y otras perturbaciones no pueden separarse como causas independientes.",
     "figure": "assets/img/figures/huang-fig1.jpg",
-    "source": "Enquist and Enquist 2011"
+    "source": "Enquist and Enquist 2011",
+    "source_es": "Enquist y Enquist 2011"
   },
   {
     "id": "f02",
     "periods": ["1976-2006"],
     "title": "Functional composition across three surveys",
+    "title_es": "Composición funcional en tres muestreos",
     "summary": "Three surveys spanning approximately 30 years were used to quantify population dynamics, species richness, functional diversity, and directional compositional change.",
+    "summary_es": "Se usaron tres muestreos que abarcan aproximadamente 30 años para cuantificar la dinámica poblacional, la riqueza de especies, la diversidad funcional y el cambio direccional en la composición.",
     "uncertainty": "The study documents temporal associations; it does not assign the observed changes to a single causal mechanism.",
+    "uncertainty_es": "El estudio documenta asociaciones temporales; no atribuye los cambios observados a un único mecanismo causal.",
     "figure": "assets/img/figures/huang-fig2.jpg",
-    "source": "Swenson et al. 2020"
+    "source": "Swenson et al. 2020",
+    "source_es": "Swenson et al. 2020"
   },
   {
     "id": "f03",
     "periods": ["remote-sensing"],
     "title": "Drought and canopy phenology from climate and remote sensing",
+    "title_es": "Sequía y fenología del dosel a partir del clima y los sensores remotos",
     "summary": "Climate records, long-term plot observations, Landsat data through 2017, MODIS data from 2001–2017, and other imagery were integrated to evaluate drought exposure, canopy deciduousness, wet-season greenness, and response to the 2015 ENSO drought.",
+    "summary_es": "Se integraron registros climáticos, observaciones de largo plazo de la parcela, datos Landsat hasta 2017, datos MODIS de 2001–2017 y otras imágenes para evaluar la exposición a la sequía, la caducifolia del dosel, el verdor de la estación lluviosa y la respuesta a la sequía del ENSO de 2015.",
     "uncertainty": "The climate, satellite, and stem-survey records cover different periods and spatial supports. Their associations do not identify a causal effect of drought. The study reported no directional change in mean annual precipitation after 1980 and no long-term change in annual productivity during 2001–2017.",
+    "uncertainty_es": "Los registros climáticos, satelitales y de muestreo de tallos cubren períodos y soportes espaciales distintos. Sus asociaciones no identifican un efecto causal de la sequía. El estudio no reportó un cambio direccional en la precipitación media anual después de 1980 ni un cambio de largo plazo en la productividad anual durante 2001–2017.",
     "figure": "assets/img/figures/huang-fig3.jpg",
-    "source": "Huang et al. 2021"
+    "source": "Huang et al. 2021",
+    "source_es": "Huang et al. 2021"
   },
   {
     "id": "f04",
     "periods": ["published-synthesis"],
     "title": "Published evidence through 2017",
+    "title_es": "Evidencia publicada hasta 2017",
     "summary": "Studies using the 1976–2006 plot surveys and satellite observations through 2017 report directional floristic and functional change and changes in canopy phenology. The 2019–21 census has not been included in the cited peer-reviewed analyses.",
+    "summary_es": "Los estudios que usan los muestreos de la parcela de 1976–2006 y observaciones satelitales hasta 2017 reportan cambios florísticos y funcionales direccionales y cambios en la fenología del dosel. El censo de 2019–21 no se ha incluido en los análisis revisados por pares citados.",
     "uncertainty": "The studies use different temporal windows, response variables, and observation methods. The evidence is site-specific and should not be generalized to other tropical dry forests without independent tests.",
+    "uncertainty_es": "Los estudios usan ventanas temporales, variables de respuesta y métodos de observación distintos. La evidencia es específica del sitio y no debe generalizarse a otros bosques tropicales secos sin pruebas independientes.",
     "figure": "assets/img/figures/huang-cr-stat.jpg",
-    "source": "Synthesis of Enquist and Enquist 2011, Swenson et al. 2020, and Huang et al. 2021"
+    "source": "Synthesis of Enquist and Enquist 2011, Swenson et al. 2020, and Huang et al. 2021",
+    "source_es": "Síntesis de Enquist y Enquist 2011, Swenson et al. 2020 y Huang et al. 2021"
   }
 ]
