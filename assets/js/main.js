@@ -2,7 +2,7 @@
   "use strict";
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var presentationVersion = "i18n-es-2";
+  var presentationVersion = "i18n-es-3";
   var root = document.documentElement;
   // Pages below the site root (es/index.html) set data-asset-base="../" so shared assets resolve.
   var assetBase = root.getAttribute("data-asset-base") || "";
